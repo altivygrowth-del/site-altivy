@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altivy Growth MKT | Agência de Performance e Branding</title>
-    <meta name="description" content="Agência de Growth Marketing focada em ROI e escala para e-commerce, SaaS, varejo e saúde. Fale direto com estrategistas seniores.">
+    <meta name="description" content="Marcas que crescem não esperam - elas contratam estratégia. Tráfego pago, Branding e SEO para e-commerce, SaaS, varejo e saúde.">
     
-    <!-- Fonts & Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome para Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
@@ -20,10 +17,10 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0D0D0D',
-                        darkCard: '#1A1A2E',
+                        darkBg: '#0b111e',
+                        darkCard: '#1e2638',
                         neonGreen: '#c1ff72',
-                        mutedText: '#94A3B8'
+                        mutedText: '#94a3b8'
                     },
                     fontFamily: {
                         sans: ['DM Sans', 'sans-serif'],
@@ -34,339 +31,267 @@
         }
     </script>
     <style>
-        body { font-family: 'DM Sans', sans-serif; background-color: #0D0D0D; color: #FFFFFF; }
+        body { font-family: 'DM Sans', sans-serif; background-color: #0b111e; color: #ffffff; }
         .font-display { font-family: 'Sora', sans-serif; }
+        .gradient-hero { background: radial-gradient(circle at top right, rgba(193,255,114,0.15), transparent 50%), linear-gradient(180deg, #0b111e 0%, #111827 100%); }
+        .gradient-footer { background: linear-gradient(180deg, #111827 0%, #0b111e 100%), radial-gradient(circle at bottom left, rgba(193,255,114,0.1), transparent 40%); }
     </style>
 </head>
 <body class="overflow-x-hidden">
 
-    <!-- BOTÃO FLUTUANTE WHATSAPP -->
-    <a href="https://wa.me/5541987834430?text=Oi!%20Vim%20pelo%20site%20da%20Altivy.%20Tenho%20uma%20empresa%20e%20quero%20entender%20como%20voc%C3%AAs%20podem%20me%20ajudar%20a%20crescer.%20Podemos%20conversar?" 
+    <a href="https://wa.me/5541987834430?text=Oi!%20Vim%20pelo%20site%20da%20Altivy.%20Tenho%20uma%20empresa%20e%20quero%20entender%20como%20voc%C3%AAs%20podem%20me%20ajudar%20a%20crescer." 
        target="_blank" rel="noopener noreferrer"
-       class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center aria-label='Contato via WhatsApp'">
+       class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="w-full bg-darkBg/80 backdrop-blur-md sticky top-0 z-40 border-b border-white/10">
+    <header class="w-full bg-darkBg/90 backdrop-blur-md sticky top-0 z-40 border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="font-display font-extrabold text-2xl tracking-tight text-white">
-                ALTIVY<span class="text-neonGreen">.</span>
-            </a>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+            <div class="font-display font-extrabold text-xl tracking-tight text-white flex items-center gap-2">
+                <div class="w-3 h-3 bg-neonGreen rounded-full"></div> ALTIVY
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-gray-300">
+                <a href="#servicos" class="hover:text-neonGreen transition">Sobre</a>
                 <a href="#servicos" class="hover:text-neonGreen transition">Serviços</a>
                 <a href="#cases" class="hover:text-neonGreen transition">Cases</a>
-                <a href="#processo" class="hover:text-neonGreen transition">Método</a>
-                <a href="#por-que-nos" class="hover:text-neonGreen transition">Diferenciais</a>
-                <a href="#faq" class="hover:text-neonGreen transition">FAQ</a>
-                <a href="https://instagram.com/altivy.marketing" target="_blank" class="hover:text-neonGreen transition text-lg" rel="noopener"><i class="fab fa-instagram"></i></a>
+                <a href="#processo" class="hover:text-neonGreen transition">Prazos</a>
+                <a href="#faq" class="hover:text-neonGreen transition">Dúvidas</a>
             </nav>
-            <div class="hidden md:block">
-                <a href="#diagnostico" class="bg-neonGreen text-darkBg font-display font-bold px-5 py-2.5 rounded-lg hover:bg-white transition text-sm">
-                    Quero um Diagnóstico
+            <div>
+                <a href="#contato" class="bg-neonGreen text-darkBg font-display font-bold px-4 py-2.5 rounded-md hover:bg-white transition text-xs uppercase tracking-wider">
+                    Agendar Diagnóstico Gratuito
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- SECTION 1: HERO -->
-    <section class="relative min-h-[85vh] flex items-center justify-center px-6 py-20 bg-gradient-to-b from-darkBg to-darkCard overflow-hidden">
-        <div class="max-w-5xl text-center z-10">
-            <span class="text-neonGreen font-display font-semibold uppercase tracking-widest text-xs bg-neonGreen/10 px-4 py-1.5 rounded-full inline-block mb-6">
-                Growth & Performance Baseados em Dados
-            </span>
-            <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight mb-8 leading-tight">
-                Growth não é sorte.<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">É método e ROI.</span>
-            </h1>
-            <p class="text-mutedText text-lg sm:text-xl max-w-2xl mx-auto mb-10">
-                Marcas que escalam têm estratégia por trás — não achismo. Desenvolvemos ecossistemas de vendas de alta performance para E-commerce, SaaS, Varejo e Saúde.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#diagnostico" class="w-full sm:w-auto bg-neonGreen text-darkBg font-display font-bold px-8 py-4 rounded-xl text-base hover:bg-white transition shadow-lg shadow-neonGreen/20">
-                    Falar com um Estrategista
-                </a>
-                <a href="#cases" class="w-full sm:w-auto border border-white/20 text-white font-display font-bold px-8 py-4 rounded-xl text-base hover:bg-white/10 transition">
-                    Ver Cases de Sucesso
-                </a>
+    <section class="relative min-h-[80vh] flex items-center px-6 py-20 gradient-hero">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+            <div class="lg:col-span-7">
+                <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight mb-6 leading-tight">
+                    Marcas que crescem não esperam — <span class="text-neonGreen">elas contratam estratégia.</span>
+                </h1>
+                <p class="text-gray-400 text-base sm:text-lg max-w-xl mb-8 leading-relaxed">
+                    Transformamos seu negócio com estratégias de growth de alto impacto: Tráfego Pago, Branding, Redes Sociais e SEO para E-commerce, SaaS, Varejo e Saúde.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contato" class="bg-neonGreen text-darkBg font-display font-bold px-6 py-3.5 rounded-lg text-sm hover:bg-white transition shadow-lg shadow-neonGreen/10 uppercase tracking-wider">
+                        Quero um Diagnóstico
+                    </a>
+                    <a href="#cases" class="border border-white/20 text-white font-display font-bold px-6 py-3.5 rounded-lg text-sm hover:bg-white/10 transition uppercase tracking-wider">
+                        Ver Cases
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="absolute w-72 h-72 bg-neonGreen/20 blur-[120px] rounded-full top-10"></div>
+                <img src="https://assets.codepen.io/12345/rocket-placeholder.png" alt="Growth Rocket Element" class="w-80 h-auto animate-bounce duration-[6000ms] relative z-10 filter drop-shadow-2xl" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop'">
             </div>
         </div>
     </section>
 
-    <!-- LOGOS DE PARCEIROS / CLIENTES -->
-    <section class="py-10 bg-darkBg border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-xs uppercase tracking-widest text-mutedText mb-6">Resultados validados em marcas de nichos competitivos</p>
-            <div class="flex flex-wrap justify-center items-center gap-12 opacity-40 grayscale hover:grayscale-0 transition duration-500">
-                <img src="https://via.placeholder.com/140x40/ffffff/000000?text=LOGO+E-COM" alt="Cliente E-commerce" class="h-8">
-                <img src="https://via.placeholder.com/140x40/ffffff/000000?text=LOGO+SAAS" alt="Cliente SaaS" class="h-8">
-                <img src="https://via.placeholder.com/140x40/ffffff/000000?text=LOGO+SAUDE" alt="Cliente Saúde" class="h-8">
-                <img src="https://via.placeholder.com/140x40/ffffff/000000?text=LOGO+VAREJO" alt="Cliente Varejo" class="h-8">
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 2: SERVIÇOS -->
     <section id="servicos" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="font-display font-bold text-3xl sm:text-4xl mb-4">O que entregamos: Tração e Escala</h2>
-            <p class="text-mutedText">Não vendemos posts ou curtidas. Estruturamos os canais onde seus clientes realmente estão prontos para comprar.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Card 1 -->
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5 hover:border-neonGreen/30 transition duration-300">
-                <div class="text-neonGreen text-3xl mb-6"><i class="fas fa-chart-line"></i></div>
-                <h3 class="font-display font-bold text-xl mb-3">Tráfego Pago focado em ROI</h3>
-                <p class="text-mutedText text-sm leading-relaxed">Anúncios estrategicamente posicionados no Google, Meta e TikTok para atrair decisores prontos para fechar negócio, limpando o desperdício de verba.</p>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5 hover:border-neonGreen/30 transition duration-300">
-                <div class="text-neonGreen text-3xl mb-6"><i class="fas fa-fingerprint"></i></div>
-                <h3 class="font-display font-bold text-xl mb-3">Branding & Posicionamento</h3>
-                <p class="text-mutedText text-sm leading-relaxed">Construção de identidade visual e narrativa editorial para transformar sua marca em líder de nicho, permitindo cobrar mais caro pelo seu produto ou serviço.</p>
-            </div>
-            <!-- Card 3 -->
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5 hover:border-neonGreen/30 transition duration-300">
-                <div class="text-neonGreen text-3xl mb-6"><i class="fas fa-search"></i></div>
-                <h3 class="font-display font-bold text-xl mb-3">SEO de Performance</h3>
-                <p class="text-mutedText text-sm leading-relaxed">Ranqueamento nas primeiras páginas para termos de alta intenção de compra, garantindo um fluxo previsível de clientes orgânicos sem depender apenas de anúncios.</p>
-            </div>
-            <!-- Card 4 -->
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5 hover:border-neonGreen/30 transition duration-300">
-                <div class="text-neonGreen text-3xl mb-6"><i class="fas fa-laptop-code"></i></div>
-                <h3 class="font-display font-bold text-xl mb-3">Criação de Web Apps & Sites</h3>
-                <p class="text-mutedText text-sm leading-relaxed">Landing pages e e-commerces ultravelozes, otimizados para UX e projetados com foco único na taxa de conversão dos seus visitantes.</p>
-            </div>
-            <!-- Card 5 -->
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5 hover:border-neonGreen/30 transition duration-300">
-                <div class="text-neonGreen text-3xl mb-6"><i class="fab fa-whatsapp"></i></div>
-                <h3 class="font-display font-bold text-xl mb-3">Automação de WhatsApp</h3>
-                <p class="text-mutedText text-sm leading-relaxed">Funis automatizados de qualificação e recuperação de vendas via WhatsApp que operam 24/7, escalando o seu time comercial sem aumentar a folha.</p>
-            </div>
-            <!-- Card 6 -->
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5 hover:border-neonGreen/30 transition duration-300">
-                <div class="text-neonGreen text-3xl mb-6"><i class="fas fa-users-cog"></i></div>
-                <h3 class="font-display font-bold text-xl mb-3">Gestão de Redes Sociais</h3>
-                <p class="text-mutedText text-sm leading-relaxed">Criação de conteúdo estratégico orientado à conversão. Transformamos a audiência fria do seu Instagram em clientes ativos.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 3: CASES & RESULTADOS -->
-    <section id="cases" class="py-24 bg-darkCard">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-                <div>
-                    <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Resultados Reais</span>
-                    <h2 class="font-display font-bold text-3xl sm:text-4xl">Nossos números falam mais alto</h2>
-                </div>
-                <p class="text-mutedText max-w-md mt-4 md:mt-0">Confira como aplicamos nossa metodologia de crescimento em negócios reais para gerar escala de verdade.</p>
-            </div>
-
-            <!-- Grid de Cases -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Case 1 -->
-                <div class="bg-darkBg rounded-2xl overflow-hidden border border-white/5 group">
-                    <div class="p-8">
-                        <span class="text-xs font-bold uppercase tracking-wide px-3 py-1 bg-white/5 rounded text-white">Segmento: Saúde</span>
-                        <div class="text-5xl font-display font-black text-neonGreen my-6">+280% de Leads</div>
-                        <h3 class="font-display font-bold text-xl mb-3 text-white">Escala de Clínicas Médicas Especializadas em 60 dias</h3>
-                        <p class="text-mutedText text-sm mb-6">
-                            <strong>Desafio:</strong> Custo de aquisição alto e leads desqualificados vindos de campanhas genéricas.<br>
-                            <strong>Solução:</strong> Funil de conversão focado em dor específica do paciente integrado à qualificação por automação.<br>
-                            <strong>Resultado:</strong> Triplicação da base de agendamentos reais mantendo o mesmo orçamento.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Case 2 -->
-                <div class="bg-darkBg rounded-2xl overflow-hidden border border-white/5 group">
-                    <div class="p-8">
-                        <span class="text-xs font-bold uppercase tracking-wide px-3 py-1 bg-white/5 rounded text-white">Segmento: E-commerce</span>
-                        <div class="text-5xl font-display font-black text-neonGreen my-6">4.2x de ROAS</div>
-                        <h3 class="font-display font-bold text-xl mb-3 text-white">Retorno sobre Investimento de Mídia para Marca de Varejo</h3>
-                        <p class="text-mutedText text-sm mb-6">
-                            <strong>Desafio:</strong> Dependência extrema de promoções e margens de lucro sufocadas no tráfego.<br>
-                            <strong>Solução:</strong> Reestruturação de catálogo de anúncios, campanhas de LTV e remarketing comportamental.<br>
-                            <strong>Resultado:</strong> Faturamento recorde de vendas recorrentes sem necessidade de queima de estoque.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 4: PROCESSO / METODOLOGIA -->
-    <section id="processo" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="font-display font-bold text-3xl sm:text-4xl mb-4">O Método Altivy: Sem Caixa-Preta</h2>
-            <p class="text-mutedText">Processos transparentes e previsíveis. Você sempre sabe exatamente o que está acontecendo e o que esperar de cada etapa.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-            <div class="p-6 bg-darkCard rounded-2xl border border-white/5 relative">
-                <div class="text-6xl font-display font-black text-white/5 absolute top-4 right-4">01</div>
-                <h3 class="font-display font-bold text-lg mb-2 mt-4 text-neonGreen">Diagnóstico</h3>
-                <p class="text-mutedText text-xs leading-relaxed">Mapeamos seus gargalos atuais de vendas, estrutura de rastreamento e análise de concorrência direta.</p>
-            </div>
-            <div class="p-6 bg-darkCard rounded-2xl border border-white/5 relative">
-                <div class="text-6xl font-display font-black text-white/5 absolute top-4 right-4">02</div>
-                <h3 class="font-display font-bold text-lg mb-2 mt-4 text-neonGreen">Estratégia</h3>
-                <p class="text-mutedText text-xs leading-relaxed">Desenhamos o plano de canais, definição de verba ideal, funis de conversão e definição de KPIs tangíveis.</p>
-            </div>
-            <div class="p-6 bg-darkCard rounded-2xl border border-white/5 relative">
-                <div class="text-6xl font-display font-black text-white/5 absolute top-4 right-4">03</div>
-                <h3 class="font-display font-bold text-lg mb-2 mt-4 text-neonGreen">Execução</h3>
-                <p class="text-mutedText text-xs leading-relaxed">Criação de criativos baseados em psicologia de consumo, desenvolvimento de landing pages e setup de campanhas.</p>
-            </div>
-            <div class="p-6 bg-darkCard rounded-2xl border border-white/5 relative">
-                <div class="text-6xl font-display font-black text-white/5 absolute top-4 right-4">04</div>
-                <h3 class="font-display font-bold text-lg mb-2 mt-4 text-neonGreen">Escala</h3>
-                <p class="text-mutedText text-xs leading-relaxed">Otimização diária de lances, testes A/B de páginas e direcionamento de orçamento para os canais de maior lucro.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 5: POR QUE A ALTIVY (DIFERENCIAIS) -->
-    <section id="por-que-nos" class="py-24 bg-darkCard">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-                <div class="lg:col-span-1">
-                    <h2 class="font-display font-bold text-3xl sm:text-4xl mb-4">Por que o mercado escolhe a Altivy?</h2>
-                    <p class="text-mutedText text-sm mb-6">Agências tradicionais vendem "escopo de entregáveis". Nós somos parceiros focados no crescimento da sua receita.</p>
-                    <div class="p-4 bg-neonGreen/10 border border-neonGreen/20 rounded-xl">
-                        <p class="text-neonGreen text-xs font-bold uppercase"><i class="fas fa-shield-alt mr-2"></i> Retenção por Resultado</p>
-                        <p class="text-white text-xs mt-1">Trabalhamos sem contratos de fidelidade abusivos porque confiamos na consistência da nossa entrega.</p>
-                    </div>
-                </div>
-                <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="p-6 bg-darkBg rounded-xl border border-white/5">
-                        <h4 class="font-display font-bold text-base text-white mb-2">Equipe Sênior de Verdade</h4>
-                        <p class="text-mutedText text-xs">Aqui sua conta não é abandonada na mão de estagiários. Você fala direto com quem desenha e executa o projeto.</p>
-                    </div>
-                    <div class="p-6 bg-darkBg rounded-xl border border-white/5">
-                        <h4 class="font-display font-bold text-base text-white mb-2">Atendimento Direto</h4>
-                        <p class="text-mutedText text-xs">Comunicação ágil e sem ruídos via canais dedicados no Slack/WhatsApp direto com o seu estrategista chefe.</p>
-                    </div>
-                    <div class="p-6 bg-darkBg rounded-xl border border-white/5">
-                        <h4 class="font-display font-bold text-base text-white mb-2">Foco Obsessivo em ROI</h4>
-                        <p class="text-mutedText text-xs">Métricas de vaidade (curtidas, comentários) ficam em segundo plano. Olhamos para Custo de Aquisição (CAC) e faturamento líquido.</p>
-                    </div>
-                    <div class="p-6 bg-darkBg rounded-xl border border-white/5">
-                        <h4 class="font-display font-bold text-base text-white mb-2">Inteligência de Dados</h4>
-                        <p class="text-mutedText text-xs">Dashboards em tempo real para você acompanhar seus investimentos centavo por centavo com total clareza.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 8: DEPOIMENTOS -->
-    <section class="py-24 max-w-7xl mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="font-display font-bold text-3xl sm:text-4xl mb-4">Quem trabalha com a gente, valida</h2>
+        <div class="mb-16">
+            <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Nossos Serviços</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl">O que você ganha, não o que fazemos!</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5">
-                <p class="text-gray-300 italic text-sm mb-6">"O maior diferencial da Altivy é o pragmatismo. Eles entenderam o nosso modelo de negócios de saúde logo na primeira semana, paramos de rasgar dinheiro com leads curiosos e focamos em conversões reais em consultas."</p>
-                <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center font-bold text-white text-sm">RM</div>
-                    <div>
-                        <h4 class="font-display font-bold text-sm text-white">Ricardo Mendes</h4>
-                        <p class="text-xs text-mutedText">Diretor de Marketing, MedClinic Group</p>
-                    </div>
-                </div>
+            <div class="bg-darkCard/40 rounded-2xl border border-white/5 overflow-hidden group hover:border-neonGreen/30 transition-all p-6">
+                <div class="h-48 rounded-xl bg-gray-900 mb-6 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop');"></div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Branding & Identidade Visual</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Construção de marcas memoráveis, paletas de cores expressivas e design sênior para destacar seu posicionamento no mercado.</p>
             </div>
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5">
-                <p class="text-gray-300 italic text-sm mb-6">"Passamos por 3 agências grandes antes de conhecer a estrutura deles. A transparência na comunicação e o fato de falar direto com os estrategistas seniores sem intermediários mudou o nosso ritmo de escala."</p>
-                <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center font-bold text-white text-sm">AM</div>
+            <div class="bg-darkCard/40 rounded-2xl border border-white/5 overflow-hidden group hover:border-neonGreen/30 transition-all p-6">
+                <div class="h-48 rounded-xl bg-gray-900 mb-6 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop');"></div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Estratégia & Posicionamento</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Definição dos melhores caminhos digitais e canais de tração com foco em ROI, eliminando o achismo comercial do seu negócio.</p>
+            </div>
+            <div class="bg-darkCard/40 rounded-2xl border border-white/5 overflow-hidden group hover:border-neonGreen/30 transition-all p-6">
+                <div class="h-48 rounded-xl bg-gray-900 mb-6 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=600&auto=format&fit=crop');"></div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Social Media & Conteúdo</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Transformamos suas redes sociais em canais editoriais de vendas robustos, gerando desejo pelo seu produto ou serviço.</p>
+            </div>
+            <div class="bg-darkCard/40 rounded-2xl border border-white/5 overflow-hidden group hover:border-neonGreen/30 transition-all p-6">
+                <div class="h-48 rounded-xl bg-gray-900 mb-6 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=600&auto=format&fit=crop');"></div>
+                <h3 class="font-display font-bold text-xl mb-2 text-white">Performance & Tráfego Pago</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Anúncios de alta conversão no Google, Meta e TikTok monitorados diretamente por estrategistas focados em lucratividade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="py-24 bg-zinc-950 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Resultados Reais</span>
+                <h2 class="font-display font-bold text-3xl sm:text-4xl">Cases de sucesso que falam por si</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#24311d] rounded-2xl p-8 border border-emerald-500/10 flex flex-col justify-between relative overflow-hidden group">
                     <div>
-                        <h4 class="font-display font-bold text-sm text-white">Amanda Martins</h4>
-                        <p class="text-xs text-mutedText">CMO & Co-fundadora, Glow E-com</p>
+                        <span class="text-xs uppercase tracking-widest font-bold text-emerald-400">Crescimento</span>
+                        <div class="text-5xl font-display font-black text-neonGreen my-4">+320%</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Allibel Doces Gourmet</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">Transformamos a identidade visual e toda a estratégia de tráfego orgânico e pago, alcançando um faturamento recorde e o reconhecimento de mercado.</p>
                     </div>
+                    <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur flex items-center justify-center self-end"><i class="fas fa-cookie-bite text-white text-xl"></i></div>
+                </div>
+
+                <div class="bg-[#1b2e3c] rounded-2xl p-8 border border-blue-500/10 flex flex-col justify-between relative overflow-hidden group">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest font-bold text-blue-400">Escalabilidade</span>
+                        <div class="text-5xl font-display font-black text-neonGreen my-4">+180%</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Focinho - Produtos PET</h3>
+                        <h4 class="text-gray-300 text-sm leading-relaxed mb-6">Criamos marcas que vendem, alinhando a estratégia de conteúdo para nichos específicos. Posicionamento estratégico premium gerando audiência engajada.</h4>
+                    </div>
+                    <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur flex items-center justify-center self-end"><i class="fas fa-dog text-white text-xl"></i></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 9: FAQ -->
-    <section id="faq" class="py-24 bg-darkCard">
+    <section id="processo" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="mb-16">
+            <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Como Trabalhamos</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl">Processo transparente, sem caixa-preta</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+            <div class="bg-darkCard p-6 rounded-xl border border-white/5">
+                <span class="text-neonGreen font-display font-bold text-xl block mb-2">01</span>
+                <h4 class="font-display font-bold text-white mb-1">Diagnóstico</h4>
+                <p class="text-gray-400 text-xs">Análise detalhada do seu negócio e infraestrutura.</p>
+            </div>
+            <div class="bg-darkCard p-6 rounded-xl border border-white/5">
+                <span class="text-neonGreen font-display font-bold text-xl block mb-2">02</span>
+                <h4 class="font-display font-bold text-white mb-1">Estratégia</h4>
+                <p class="text-gray-400 text-xs">Definição dos canais e plano de ação estruturado.</p>
+            </div>
+            <div class="bg-darkCard p-6 rounded-xl border border-white/5">
+                <span class="text-neonGreen font-display font-bold text-xl block mb-2">03</span>
+                <h4 class="font-display font-bold text-white mb-1">Execução</h4>
+                <p class="text-gray-400 text-xs">Implementação ágil e criativos de alta conversão.</p>
+            </div>
+            <div class="bg-darkCard p-6 rounded-xl border border-white/5">
+                <span class="text-neonGreen font-display font-bold text-xl block mb-2">04</span>
+                <h4 class="font-display font-bold text-white mb-1">Resultados</h4>
+                <p class="text-gray-400 text-xs">Análise de métricas, otimizações e escala contínua.</p>
+            </div>
+        </div>
+
+        <div class="bg-darkCard/40 border border-white/5 p-8 rounded-2xl">
+            <h3 class="font-display font-bold text-xl mb-6 text-white">Prazos e Investimento</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h5 class="text-neonGreen text-xs font-bold uppercase tracking-wider mb-2">Diagnóstico Gratuito</h5>
+                    <p class="text-gray-400 text-xs leading-relaxed">Reunião estratégica de 30 min para analisar seu negócio e propor soluções imediatas.</p>
+                </div>
+                <div>
+                    <h5 class="text-neonGreen text-xs font-bold uppercase tracking-wider mb-2">Prazo Médio</h5>
+                    <p class="text-gray-400 text-xs leading-relaxed">Projetos iniciam em até 7 dias úteis. Resultados visíveis em suas campanhas entre 15 a 30 dias.</p>
+                </div>
+                <div>
+                    <h5 class="text-neonGreen text-xs font-bold uppercase tracking-wider mb-2">Sem Fidelidade</h5>
+                    <p class="text-gray-400 text-xs leading-relaxed">Contratos mensais. Permanecemos juntos pelo valor entregue e resultados reais gerados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-zinc-950/60 border-t border-white/5">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="font-display font-bold text-3xl text-center mb-12">Dúvidas Frequentes</h2>
-            <div class="space-y-4">
-                <div class="p-6 bg-darkBg rounded-xl border border-white/5">
-                    <h4 class="font-display font-bold text-base text-white mb-2">Existe contrato mínimo de fidelidade?</h4>
-                    <p class="text-mutedText text-sm">Não trabalhamos com amarras de fidelidade de longo prazo. Nossos contratos operam de forma mensal porque acreditamos que a retenção deve acontecer pela consistência e geração de resultados reais.</p>
+            <div class="text-center mb-16">
+                <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Dúvidas Frequentes</span>
+                <h2 class="font-display font-bold text-3xl">Perguntas comuns respondidas</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-darkCard/40 border border-white/5 p-6 rounded-xl">
+                    <h4 class="font-display font-bold text-white text-sm mb-2">Qual é o investimento mínimo?</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Não temos investimento mínimo fixo. Cada projeto é customizado conforme seu orçamento e objetivos práticos. Começamos com o diagnóstico gratuito.</p>
                 </div>
-                <div class="p-6 bg-darkBg rounded-xl border border-white/5">
-                    <h4 class="font-display font-bold text-base text-white mb-2">Como funciona a comunicação com a agência?</h4>
-                    <p class="text-mutedText text-sm">Você terá acesso a um canal exclusivo de comunicação ágil e reuniões recorrentes de alinhamento tático diretamente com o estrategista sênior alocado na sua operação.</p>
+                <div class="bg-darkCard/40 border border-white/5 p-6 rounded-xl">
+                    <h4 class="font-display font-bold text-white text-sm mb-2">Quanto tempo leva para ver resultados?</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Resultados iniciais aparecem em 15 dias. Crescimento consistente em um ciclo de 60 a 90 dias. Tudo depende do seu nicho de mercado.</p>
                 </div>
-                <div class="p-6 bg-darkBg rounded-xl border border-white/5">
-                    <h4 class="font-display font-bold text-base text-white mb-2">Em quanto tempo começamos a ver resultados?</h4>
-                    <p class="text-mutedText text-sm">A fase de setup e diagnóstico leva até 15 dias. Campanhas de tráfego começam a gerar dados e otimizações logo nas primeiras semanas, enquanto canais como SEO e autoridade de marca maduram em médio prazo.</p>
+                <div class="bg-darkCard/40 border border-white/5 p-6 rounded-xl">
+                    <h4 class="font-display font-bold text-white text-sm mb-2">Vocês trabalham 100% remoto?</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Sim! Atendemos clientes em todo o Brasil e exterior. Utilizamos reuniões rápidas em vídeo e canais integrados para manter uma comunicação dinâmica.</p>
+                </div>
+                <div class="bg-darkCard/40 border border-white/5 p-6 rounded-xl">
+                    <h4 class="font-display font-bold text-white text-sm mb-2">Há contrato de fidelidade?</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Não. Contratos mensais sem multas abusivas. Você mantém a parceria pelo ROI e crescimento, não por amarras jurídicas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 10: DIAGNÓSTICO / CONTATO -->
-    <section id="diagnostico" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="contato" class="py-24 gradient-footer">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-                <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Vagas Limitadas p/ Este Mês</span>
-                <h2 class="font-display font-bold text-4xl mb-6">Solicite um diagnóstico gratuito da sua operação</h2>
-                <p class="text-mutedText text-sm mb-6">Vamos analisar suas campanhas atuais, sua concorrência e mostrar o plano exato que desenharíamos para sua empresa tracionar este trimestre.</p>
-                <div class="space-y-3 text-sm text-gray-300">
-                    <p><i class="fas fa-check text-neonGreen mr-2"></i> Análise técnica real, não apresentação comercial genérica.</p>
-                    <p><i class="fas fa-check text-neonGreen mr-2"></i> Feito diretamente por um estrategista sênior.</p>
+                <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Vamos Conversar?</span>
+                <h2 class="font-display font-bold text-4xl mb-4">Diagnóstico gratuito</h2>
+                <p class="text-gray-400 text-sm mb-8 leading-relaxed max-w-md">Olhamos suas campanhas por dentro e apontamos os furos que estão fazendo sua empresa gastar verba à toa.</p>
+                
+                <div class="space-y-4 text-xs text-gray-300">
+                    <div class="flex items-center gap-3"><i class="fab fa-whatsapp text-neonGreen text-base"></i> (41) 98783-4430</div>
+                    <div class="flex items-center gap-3"><i class="far fa-envelope text-neonGreen text-base"></i> altivygrowth@gmail.com</div>
+                    <div class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-neonGreen text-base"></i> Atendimento 100% Remoto</div>
+                    <div class="flex items-center gap-3"><i class="far fa-clock text-neonGreen text-base"></i> Segunda a Sexta, Horário Comercial</div>
                 </div>
             </div>
-            
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/10">
-                <form action="https://wa.me/5541987834430" method="GET" target="_blank" class="space-y-4">
-                    <input type="hidden" name="text" value="Oi! Vim pelo site da Altivy. Quero agendar meu diagnóstico estratégico de crescimento.">
+
+            <div class="bg-darkCard p-8 rounded-2xl border border-white/5">
+                <form onsubmit="redirectToWhatsApp(event)" class="space-y-4">
                     <div>
-                        <label class="block text-xs uppercase tracking-wider font-bold text-gray-400 mb-2">Nome Completo</label>
-                        <input type="text" required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm">
+                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Seu Nome</label>
+                        <input id="form-name" type="text" required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm">
                     </div>
                     <div>
-                        <label class="block text-xs uppercase tracking-wider font-bold text-gray-400 mb-2">Nome da Empresa</label>
-                        <input type="text" required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm">
+                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Nome da Empresa</label>
+                        <input id="form-company" type="text" required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm">
                     </div>
                     <div>
-                        <label class="block text-xs uppercase tracking-wider font-bold text-gray-400 mb-2">Segmento de Atuação</label>
-                        <select required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm">
-                            <option value="ecommerce">E-commerce</option>
-                            <option value="saas">SaaS / Tecnologia</option>
-                            <option value="saude">Saúde / Clínicas</option>
-                            <option value="varejo">Varejo / Negócio Local</option>
+                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Seu Segmento</label>
+                        <select id="form-niche" required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm text-gray-300">
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="SaaS">SaaS / Tecnologia</option>
+                            <option value="Saúde">Saúde / Clínicas</option>
+                            <option value="Varejo">Varejo / Serviço</option>
                         </select>
                     </div>
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider font-bold text-gray-400 mb-2">Maior Desafio Atual</label>
-                        <textarea required rows="3" class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm" placeholder="Ex: Baixo ROI em anúncios, falta de leads qualificados..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-neonGreen text-darkBg font-display font-bold py-4 rounded-xl hover:bg-white transition text-center text-sm">
-                        Enviar e Agendar via WhatsApp <i class="fab fa-whatsapp ml-1"></i>
+                    <button type="submit" class="w-full bg-neonGreen text-darkBg font-display font-bold py-4 rounded-xl hover:bg-white transition text-center text-xs uppercase tracking-widest mt-2">
+                        Quero um Diagnóstico <i class="fab fa-whatsapp ml-1"></i>
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 11: RODAPÉ -->
-    <footer class="bg-darkBg border-t border-white/5 py-12 text-sm text-mutedText">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <span class="font-display font-extrabold text-xl text-white">ALTIVY<span class="text-neonGreen">.</span></span>
-                <p class="text-xs mt-2">© 2026 Altivy Growth MKT. Operação 100% Remota de Guaratuba, PR para o Brasil.</p>
-            </div>
-            <div class="flex items-center space-x-6">
-                <a href="mailto:altivygrowth@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope mr-1"></i> altivygrowth@gmail.com</a>
-                <a href="https://instagram.com/altivy.marketing" target="_blank" class="hover:text-white transition" rel="noopener"><i class="fab fa-instagram mr-1"></i> @altivy.marketing</a>
+    <footer class="bg-darkBg border-t border-white/5 py-8 text-xs text-mutedText">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <span class="font-display font-bold text-white text-sm">ALTIVY<span class="text-neonGreen">.</span></span>
+            <p>© 2026 Altivy Growth MKT. Todos os direitos reservados. Operação Digital Remota.</p>
+            <div class="flex gap-6">
+                <a href="https://instagram.com/altivy.marketing" target="_blank" rel="noopener" class="hover:text-white transition">Instagram</a>
+                <a href="#servicos" class="hover:text-white transition">Serviços</a>
+                <a href="#contato" class="hover:text-white transition">Contato</a>
             </div>
         </div>
     </footer>
 
+    <script>
+        function redirectToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const company = document.getElementById('form-company').value;
+            const niche = document.getElementById('form-niche').value;
+            
+            const message = `Oi! Vim pelo site da Altivy. Me chamo ${name}, da empresa ${company} (${niche}) e gostaria de agendar meu diagnóstico gratuito de growth.`;
+            const encodedMessage = encodeURIComponent(message);
+            
+            window.open(`https://wa.me/5541987834430?text=${encodedMessage}`, '_blank');
+        }
+    </script>
 </body>
 </html>
