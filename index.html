@@ -1,250 +1,443 @@
-{
-  "agency": {
-    "name": "Altivy Marketing",
-    "type": "Growth Marketing, Branding e Performance",
-    "city": "Paraná, Brasil",
-    "model": "100% remoto",
-    "instagram": "https://www.instagram.com/altivy.marketing/",
-    "whatsapp": "+5541987834430",
-    "email": "contato@altivy.com.br",
-    "website": "https://altivy.com.br"
-  },
-  "branding": {
-    "mood": "Editorial sofisticado orientado a resultados",
-    "palette": {
-      "primary": {
-        "black": "#0B0B0B",
-        "offWhite": "#F6F4EF",
-        "graphite": "#1A1A1A"
-      },
-      "accent": {
-        "lime": "#B7FF00",
-        "blue": "#4B8DFF"
-      }
-    },
-    "typography": {
-      "headline": [
-        "Clash Display",
-        "Canela",
-        "Editorial New"
-      ],
-      "body": [
-        "DM Sans",
-        "Söhne"
-      ]
-    }
-  },
-  "seo": {
-    "title": "Agência de Growth Marketing no Paraná | Altivy Marketing",
-    "description": "Branding, tráfego pago e growth marketing para empresas que querem crescer com previsibilidade.",
-    "keywords": [
-      "agência de marketing",
-      "growth marketing",
-      "branding",
-      "tráfego pago",
-      "performance",
-      "social media",
-      "criação de sites"
-    ]
-  },
-  "hero": {
-    "headline": "Branding que posiciona. Performance que escala.",
-    "subheadline": "Estratégias de growth marketing, branding e performance para empresas que querem crescer com previsibilidade.",
-    "primaryCTA": {
-      "label": "Quero um diagnóstico gratuito",
-      "link": "https://wa.me/5541987834430?text=Oi!%20Vim%20pelo%20site%20da%20Altivy.%20Tenho%20uma%20empresa%20e%20quero%20entender%20como%20vocês%20podem%20me%20ajudar."
-    },
-    "secondaryCTA": {
-      "label": "Ver cases",
-      "link": "#cases"
-    },
-    "metrics": [
-      "+50 campanhas gerenciadas",
-      "+R$ 3M investidos em mídia",
-      "Empresas atendidas em todo Brasil",
-      "Estratégia orientada a faturamento"
-    ]
-  },
-  "services": [
+export default function AltivyLandingPage() {
+  const services = [
     {
-      "title": "Growth Marketing",
-      "description": "Estruturamos aquisição, conversão e crescimento sustentável.",
-      "deliverables": [
-        "Meta Ads",
-        "Google Ads",
-        "Funis",
-        "CRO",
-        "Estratégia de escala"
-      ],
-      "result": "Mais leads qualificados e previsibilidade"
+      title: 'Growth Marketing',
+      description:
+        'Estratégias orientadas a aquisição, conversão e crescimento previsível.',
     },
     {
-      "title": "Branding & Posicionamento",
-      "description": "Marcas fortes são escolhidas antes do preço.",
-      "deliverables": [
-        "Naming",
-        "Identidade visual",
-        "Posicionamento",
-        "Tom de voz",
-        "Estratégia de marca"
-      ],
-      "result": "Autoridade e percepção premium"
+      title: 'Branding & Posicionamento',
+      description:
+        'Construímos marcas que geram autoridade antes mesmo da venda.',
     },
     {
-      "title": "Social Media Estratégico",
-      "description": "Conteúdo pensado para gerar desejo e conversão.",
-      "deliverables": [
-        "Reels",
-        "Criativos",
-        "Motion Design",
-        "Captação",
-        "Estratégia editorial"
-      ],
-      "result": "Engajamento que vira negócio"
+      title: 'Social Media Estratégico',
+      description:
+        'Conteúdo visual pensado para retenção, desejo e conversão.',
     },
     {
-      "title": "Websites & Landing Pages",
-      "description": "Sites rápidos e sofisticados focados em conversão.",
-      "deliverables": [
-        "Landing Pages",
-        "UI/UX",
-        "SEO",
-        "Copywriting",
-        "Sites institucionais"
-      ],
-      "result": "Mais conversão e percepção premium"
-    }
-  ],
-  "cases": [
+      title: 'Sites & Landing Pages',
+      description:
+        'Experiências premium focadas em performance e percepção de valor.',
+    },
+  ];
+
+  const cases = [
     {
-      "client": "Clínica estética",
-      "problem": "Dependência de indicação",
-      "solution": "Reposicionamento visual + Meta Ads",
-      "result": "+320% de leads em 90 dias"
+      title: 'Clínica Estética',
+      result: '+320% de leads em 90 dias',
+      description:
+        'Reposicionamento visual + campanhas Meta Ads focadas em conversão.',
     },
     {
-      "client": "E-commerce fashion",
-      "problem": "Baixo ROAS",
-      "solution": "Nova identidade + criativos focados em performance",
-      "result": "ROAS 5.8x em 60 dias"
+      title: 'E-commerce Fashion',
+      result: 'ROAS 5.8x em 60 dias',
+      description:
+        'Nova identidade visual e criativos orientados à performance.',
     },
     {
-      "client": "Empresa B2B",
-      "problem": "Marca sem autoridade",
-      "solution": "Rebranding + landing pages + LinkedIn Ads",
-      "result": "+180% de reuniões qualificadas"
-    }
-  ],
-  "process": [
+      title: 'Empresa B2B',
+      result: '+180% de reuniões qualificadas',
+      description:
+        'Landing pages + LinkedIn Ads + reposicionamento estratégico.',
+    },
+  ];
+
+  const testimonials = [
     {
-      "step": "Diagnóstico",
-      "description": "Análise de posicionamento, funil e métricas"
+      name: 'Mariana Lopes',
+      role: 'CEO — Clínica Lumina',
+      text: 'Saímos de campanhas sem direção para um sistema que realmente gera clientes.',
     },
     {
-      "step": "Estratégia",
-      "description": "Plano de crescimento orientado a dados"
+      name: 'Rafael Mendes',
+      role: 'Founder — Urban Fit',
+      text: 'A Altivy trouxe clareza estratégica e resultados rápidos.',
     },
-    {
-      "step": "Execução",
-      "description": "Campanhas, conteúdo e otimizações"
-    },
-    {
-      "step": "Escala",
-      "description": "Relatórios, testes e crescimento sustentável"
-    }
-  ],
-  "differentials": [
-    "Growth orientado a faturamento",
-    "Equipe sênior",
-    "Branding + performance integrados",
-    "Transparência total"
-  ],
-  "team": [
-    {
-      "name": "Lucas Henrique",
-      "role": "Direção Criativa & Branding",
-      "specialty": "Posicionamento e identidade visual"
-    },
-    {
-      "name": "Luiz",
-      "role": "Growth Strategist",
-      "specialty": "Mídia paga e performance"
-    }
-  ],
-  "testimonials": [
-    {
-      "name": "Mariana Lopes",
-      "role": "CEO",
-      "company": "Clínica Lumina",
-      "testimonial": "Saímos de campanhas sem direção para um sistema que realmente gera clientes."
-    },
-    {
-      "name": "Rafael Mendes",
-      "role": "Founder",
-      "company": "Urban Fit",
-      "testimonial": "A Altivy trouxe clareza estratégica e resultados rápidos."
-    }
-  ],
-  "faq": [
-    {
-      "question": "Vocês trabalham remoto?",
-      "answer": "Sim. Atendimento em todo Brasil."
-    },
-    {
-      "question": "Quando começam os resultados?",
-      "answer": "As primeiras otimizações normalmente aparecem entre 30 e 90 dias."
-    },
-    {
-      "question": "Existe fidelidade?",
-      "answer": "A permanência acontece pelo resultado entregue."
-    }
-  ],
-  "diagnosticForm": {
-    "title": "Quero um diagnóstico gratuito",
-    "fields": [
-      "Nome",
-      "Empresa",
-      "Segmento",
-      "Maior desafio atual",
-      "Orçamento estimado",
-      "Como conheceu a agência"
-    ],
-    "submitCTA": "Falar com um estrategista"
-  },
-  "footer": {
-    "company": "Altivy Marketing",
-    "instagram": "https://www.instagram.com/altivy.marketing/",
-    "whatsapp": "+55 41 98783-4430",
-    "email": "contato@altivy.com.br"
-  },
-  "jsonLD": {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Altivy Marketing",
-    "url": "https://altivy.com.br",
-    "telephone": "+55 41 98783-4430",
-    "areaServed": "Brasil",
-    "sameAs": [
-      "https://www.instagram.com/altivy.marketing/"
-    ]
-  },
-  "stack": {
-    "frontend": [
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "GSAP"
-    ],
-    "cms": [
-      "Sanity",
-      "Notion API"
-    ],
-    "hosting": "Vercel",
-    "analytics": [
-      "Google Analytics",
-      "Meta Pixel",
-      "Google Tag Manager",
-      "Hotjar"
-    ]
-  }
+  ];
+
+  return (
+    <main className="bg-[#0B0B0B] text-[#F6F4EF] min-h-screen font-sans overflow-hidden">
+      <div className="fixed inset-0 opacity-20 pointer-events-none bg-[radial-gradient(circle_at_top_right,#B7FF00_0%,transparent_25%)]" />
+
+      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10 bg-black/30">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+          <h1 className="text-xl font-bold tracking-widest">ALTIVY</h1>
+
+          <nav className="hidden md:flex gap-8 text-sm text-white/70">
+            <a href="#services" className="hover:text-white transition">
+              Serviços
+            </a>
+            <a href="#cases" className="hover:text-white transition">
+              Cases
+            </a>
+            <a href="#process" className="hover:text-white transition">
+              Processo
+            </a>
+            <a href="#contact" className="hover:text-white transition">
+              Contato
+            </a>
+          </nav>
+
+          <a
+            href="https://wa.me/5541987834430?text=Oi!%20Vim%20pelo%20site%20da%20Altivy"
+            target="_blank"
+            className="bg-[#B7FF00] text-black px-5 py-3 rounded-full font-semibold hover:scale-105 transition"
+          >
+            Diagnóstico gratuito
+          </a>
+        </div>
+      </header>
+
+      <section className="relative min-h-screen flex items-center px-6 pt-40 pb-20">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 border border-white/10 bg-white/5 px-4 py-2 rounded-full text-sm text-white/70 mb-8">
+              Growth Marketing • Branding • Performance
+            </div>
+
+            <h2 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-8">
+              Branding que posiciona.
+              <br />
+              <span className="text-[#B7FF00]">Performance que escala.</span>
+            </h2>
+
+            <p className="text-white/70 text-lg leading-relaxed max-w-xl mb-10">
+              Estratégias de growth marketing para empresas que querem crescer
+              com previsibilidade — não com achismo.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://wa.me/5541987834430"
+                target="_blank"
+                className="bg-[#B7FF00] text-black px-7 py-4 rounded-full font-bold hover:scale-105 transition"
+              >
+                Quero um diagnóstico
+              </a>
+
+              <a
+                href="#cases"
+                className="border border-white/15 px-7 py-4 rounded-full font-medium hover:bg-white hover:text-black transition"
+              >
+                Ver cases
+              </a>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+              {['+120 campanhas', '+R$3M mídia', 'Brasil inteiro', 'Growth real'].map(
+                (item) => (
+                  <div
+                    key={item}
+                    className="border border-white/10 bg-white/5 rounded-2xl p-4 text-sm text-white/80"
+                  >
+                    {item}
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute inset-0 bg-[#B7FF00]/20 blur-[120px] rounded-full" />
+
+            <div className="relative border border-white/10 bg-[#111] rounded-[32px] p-8 shadow-2xl">
+              <div className="flex items-center justify-between mb-10">
+                <div>
+                  <p className="text-white/50 text-sm">Performance Dashboard</p>
+                  <h3 className="text-2xl font-bold mt-2">Resultados em escala</h3>
+                </div>
+
+                <div className="bg-[#B7FF00] text-black px-4 py-2 rounded-full font-bold text-sm">
+                  +320%
+                </div>
+              </div>
+
+              <div className="space-y-5">
+                <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
+                  <div className="flex justify-between text-sm text-white/60 mb-3">
+                    <span>Leads</span>
+                    <span>+320%</span>
+                  </div>
+                  <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
+                    <div className="w-[82%] h-full bg-[#B7FF00] rounded-full" />
+                  </div>
+                </div>
+
+                <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
+                  <div className="flex justify-between text-sm text-white/60 mb-3">
+                    <span>ROAS</span>
+                    <span>5.8x</span>
+                  </div>
+                  <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
+                    <div className="w-[70%] h-full bg-[#4B8DFF] rounded-full" />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-5">
+                  <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                    <p className="text-white/50 text-sm">CTR Médio</p>
+                    <h4 className="text-4xl font-black mt-3">8.2%</h4>
+                  </div>
+
+                  <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                    <p className="text-white/50 text-sm">CAC</p>
+                    <h4 className="text-4xl font-black mt-3">-34%</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="py-28 px-6 border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <p className="text-[#B7FF00] uppercase tracking-[0.3em] text-sm mb-4">
+              Serviços
+            </p>
+            <h2 className="text-5xl font-black max-w-3xl leading-tight">
+              Não executamos marketing.
+              <br />
+              Construímos crescimento.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="group border border-white/10 bg-white/5 rounded-[32px] p-10 hover:border-[#B7FF00]/50 transition"
+              >
+                <h3 className="text-3xl font-bold mb-5 group-hover:text-[#B7FF00] transition">
+                  {service.title}
+                </h3>
+                <p className="text-white/65 leading-relaxed text-lg">
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="cases" className="py-28 px-6 border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 flex items-end justify-between gap-10 flex-wrap">
+            <div>
+              <p className="text-[#B7FF00] uppercase tracking-[0.3em] text-sm mb-4">
+                Cases
+              </p>
+              <h2 className="text-5xl font-black leading-tight">
+                Resultado mensurável.
+              </h2>
+            </div>
+
+            <p className="text-white/60 max-w-xl text-lg">
+              Cada projeto é orientado a crescimento real — não métricas de
+              vaidade.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-6">
+            {cases.map((item) => (
+              <div
+                key={item.title}
+                className="border border-white/10 bg-[#111] rounded-[32px] p-8"
+              >
+                <div className="mb-10">
+                  <div className="w-full h-60 rounded-2xl bg-gradient-to-br from-[#1f1f1f] to-[#0f0f0f] border border-white/10 flex items-center justify-center">
+                    <span className="text-white/20 text-sm">Mockup do Case</span>
+                  </div>
+                </div>
+
+                <p className="text-white/50 mb-3">{item.title}</p>
+
+                <h3 className="text-4xl font-black text-[#B7FF00] mb-5">
+                  {item.result}
+                </h3>
+
+                <p className="text-white/65 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="process" className="py-28 px-6 border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <p className="text-[#B7FF00] uppercase tracking-[0.3em] text-sm mb-4">
+              Processo
+            </p>
+            <h2 className="text-5xl font-black leading-tight max-w-4xl">
+              Transparência total.
+              <br />
+              Sem caixa-preta.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              'Diagnóstico',
+              'Estratégia',
+              'Execução',
+              'Escala',
+            ].map((step, index) => (
+              <div
+                key={step}
+                className="border border-white/10 rounded-[32px] p-8 bg-white/5"
+              >
+                <div className="text-[#B7FF00] text-sm mb-6">
+                  0{index + 1}
+                </div>
+                <h3 className="text-2xl font-bold mb-4">{step}</h3>
+                <p className="text-white/60 leading-relaxed">
+                  Metodologia estruturada para gerar crescimento sustentável.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-28 px-6 border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <p className="text-[#B7FF00] uppercase tracking-[0.3em] text-sm mb-4">
+              Depoimentos
+            </p>
+            <h2 className="text-5xl font-black leading-tight">
+              Empresas continuam.
+              <br />
+              Porque resultado retém.
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-6">
+            {testimonials.map((item) => (
+              <div
+                key={item.name}
+                className="border border-white/10 bg-white/5 rounded-[32px] p-10"
+              >
+                <p className="text-2xl leading-relaxed mb-10 text-white/85">
+                  “{item.text}”
+                </p>
+
+                <div>
+                  <h4 className="font-bold text-xl">{item.name}</h4>
+                  <p className="text-white/50 mt-1">{item.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        className="py-28 px-6 border-t border-white/10"
+      >
+        <div className="max-w-5xl mx-auto border border-white/10 bg-white/5 rounded-[40px] p-10 md:p-16">
+          <div className="text-center mb-14">
+            <p className="text-[#B7FF00] uppercase tracking-[0.3em] text-sm mb-4">
+              Diagnóstico gratuito
+            </p>
+            <h2 className="text-5xl font-black leading-tight mb-6">
+              Sua empresa precisa de estratégia.
+              <br />
+              Não de mais achismo.
+            </h2>
+
+            <p className="text-white/60 text-lg max-w-2xl mx-auto">
+              Preencha o formulário e fale com um estrategista da Altivy.
+            </p>
+          </div>
+
+          <form className="grid md:grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="Nome"
+              className="bg-[#111] border border-white/10 rounded-2xl px-6 py-5 outline-none"
+            />
+
+            <input
+              type="text"
+              placeholder="Empresa"
+              className="bg-[#111] border border-white/10 rounded-2xl px-6 py-5 outline-none"
+            />
+
+            <input
+              type="text"
+              placeholder="Segmento"
+              className="bg-[#111] border border-white/10 rounded-2xl px-6 py-5 outline-none"
+            />
+
+            <input
+              type="text"
+              placeholder="Orçamento estimado"
+              className="bg-[#111] border border-white/10 rounded-2xl px-6 py-5 outline-none"
+            />
+
+            <textarea
+              placeholder="Maior desafio atual"
+              className="md:col-span-2 bg-[#111] border border-white/10 rounded-2xl px-6 py-5 outline-none min-h-[160px]"
+            />
+
+            <button
+              className="md:col-span-2 bg-[#B7FF00] text-black rounded-2xl py-5 font-black text-lg hover:scale-[1.01] transition"
+              type="submit"
+            >
+              Falar com um estrategista
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer className="border-t border-white/10 py-10 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-white/50">
+          <div>
+            <h3 className="font-bold text-white mb-2">ALTIVY MARKETING</h3>
+            <p>Branding • Growth • Performance</p>
+          </div>
+
+          <div className="flex gap-6 text-sm">
+            <a
+              href="https://www.instagram.com/altivy.marketing/"
+              target="_blank"
+              className="hover:text-white transition"
+            >
+              Instagram
+            </a>
+
+            <a
+              href="mailto:contato@altivy.com.br"
+              className="hover:text-white transition"
+            >
+              E-mail
+            </a>
+
+            <a
+              href="https://wa.me/5541987834430"
+              target="_blank"
+              className="hover:text-white transition"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <a
+        href="https://wa.me/5541987834430"
+        target="_blank"
+        className="fixed bottom-6 right-6 bg-[#B7FF00] text-black px-6 py-4 rounded-full font-bold shadow-2xl hover:scale-105 transition z-50"
+      >
+        WhatsApp
+      </a>
+    </main>
+  );
 }
