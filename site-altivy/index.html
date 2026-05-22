@@ -1,297 +1,621 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Altivy Growth MKT | Agência de Performance e Branding</title>
-    <meta name="description" content="Marcas que crescem não esperam - elas contratam estratégia. Tráfego pago, Branding e SEO para e-commerce, SaaS, varejo e saúde.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência de Growth Marketing | Altivy — Performance e Resultados Reais</title>
+  <meta name="description" content="Altivy Growth MKT — agência de performance, tráfego pago, branding e automação para e-commerce, SaaS, varejo e saúde. Guaratuba, PR. Diagnóstico gratuito." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Altivy Growth MKT",
+    "description": "Agência de growth marketing, tráfego pago, branding, SEO e automação para e-commerce, SaaS, varejo e saúde.",
+    "url": "https://altivy.com.br",
+    "telephone": "+5541987834430",
+    "email": "altivygrowth@gmail.com",
+    "address": {"@type": "PostalAddress","addressLocality": "Guaratuba","addressRegion": "PR","addressCountry": "BR"},
+    "areaServed": "Brasil",
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "sameAs": ["https://www.instagram.com/altivy.marketing/"],
+    "serviceType": ["Growth Marketing","Tráfego Pago","Branding","SEO","Social Media","Automação de Marketing"]
+  }
+  </script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --black:#080808;--black-2:#0f0f0f;--black-3:#161616;
+      --green:#c1ff72;--green-dim:#a8e85f;
+      --white:#f5f5f0;--white-dim:#a0a096;
+      --font-d:'Sora',sans-serif;--font-b:'DM Sans',sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--black);color:var(--white);font-family:var(--font-b);font-size:16px;line-height:1.6;overflow-x:hidden;cursor:none}
+    body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:1;opacity:0.7}
+    .cursor{position:fixed;width:10px;height:10px;background:var(--green);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .15s,height .15s;mix-blend-mode:difference}
+    .cursor-ring{position:fixed;width:34px;height:34px;border:1px solid rgba(193,255,114,.35);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .12s}
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        darkBg: '#0b111e',
-                        darkCard: '#1e2638',
-                        neonGreen: '#c1ff72',
-                        mutedText: '#94a3b8'
-                    },
-                    fontFamily: {
-                        sans: ['DM Sans', 'sans-serif'],
-                        display: ['Sora', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { font-family: 'DM Sans', sans-serif; background-color: #0b111e; color: #ffffff; }
-        .font-display { font-family: 'Sora', sans-serif; }
-        .gradient-hero { background: radial-gradient(circle at top right, rgba(193,255,114,0.15), transparent 50%), linear-gradient(180deg, #0b111e 0%, #111827 100%); }
-        .gradient-footer { background: linear-gradient(180deg, #111827 0%, #0b111e 100%), radial-gradient(circle at bottom left, rgba(193,255,114,0.1), transparent 40%); }
-    </style>
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 48px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(14px);background:rgba(8,8,8,.85);border-bottom:1px solid rgba(193,255,114,.07);transition:border-color .3s}
+    .logo{font-family:var(--font-d);font-size:22px;font-weight:800;letter-spacing:-.04em;color:var(--white);text-decoration:none}
+    .logo span{color:var(--green)}
+    .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+    .nav-links a{font-size:12px;font-weight:500;color:var(--white-dim);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;transition:color .2s}
+    .nav-links a:hover{color:var(--green)}
+    .nav-cta{background:var(--green) !important;color:var(--black) !important;padding:10px 20px;border-radius:2px;font-weight:700 !important;transition:transform .2s,box-shadow .2s !important}
+    .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(193,255,114,.3) !important}
+    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--white);transition:all .3s}
+    .close-nav{position:fixed;top:24px;right:24px;z-index:102;background:none;border:none;color:var(--white);font-size:26px;cursor:pointer;display:none}
+
+    /* HERO */
+    #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 80px;position:relative;overflow:hidden}
+    .hero-bg{position:absolute;top:50%;left:-10px;transform:translateY(-50%);font-family:var(--font-d);font-size:clamp(100px,18vw,240px);font-weight:800;color:transparent;-webkit-text-stroke:1px rgba(193,255,114,.055);line-height:1;pointer-events:none;white-space:nowrap;letter-spacing:-.05em;user-select:none}
+    .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(193,255,114,.09);border:1px solid rgba(193,255,114,.2);padding:6px 14px;border-radius:2px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:28px;width:fit-content;opacity:0;animation:fadeUp .8s .2s forwards}
+    .hero-tag::before{content:'';width:6px;height:6px;background:var(--green);border-radius:50%;animation:blink 2s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+    h1{font-family:var(--font-d);font-size:clamp(46px,7vw,92px);font-weight:800;line-height:1.0;letter-spacing:-.04em;max-width:860px;opacity:0;animation:fadeUp .9s .4s forwards}
+    h1 .acc{color:var(--green)}
+    .hero-sub{font-size:clamp(15px,1.8vw,19px);color:var(--white-dim);max-width:500px;margin-top:22px;font-weight:300;line-height:1.65;opacity:0;animation:fadeUp .9s .6s forwards}
+    .hero-actions{display:flex;align-items:center;gap:18px;margin-top:44px;flex-wrap:wrap;opacity:0;animation:fadeUp .9s .8s forwards}
+    .hero-metrics{position:absolute;right:48px;bottom:80px;display:flex;flex-direction:column;gap:22px;opacity:0;animation:fadeL 1s 1s forwards}
+    .metric{text-align:right}
+    .metric-num{font-family:var(--font-d);font-size:40px;font-weight:800;color:var(--green);line-height:1;letter-spacing:-.04em}
+    .metric-label{font-size:10px;color:var(--white-dim);text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
+    .m-div{width:100%;height:1px;background:rgba(255,255,255,.07)}
+    .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fadeUp 1s 1.2s forwards}
+    .scroll-hint span{font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:var(--white-dim)}
+    .scroll-line{width:1px;height:44px;background:linear-gradient(to bottom,var(--green),transparent);animation:sLine 1.5s ease-in-out infinite}
+    @keyframes sLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeL{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:translateX(0)}}
+
+    /* BUTTONS */
+    .btn-p{background:var(--green);color:var(--black);padding:15px 30px;font-family:var(--font-d);font-size:14px;font-weight:700;text-decoration:none;border-radius:2px;display:inline-flex;align-items:center;gap:10px;transition:all .25s;border:none;cursor:none}
+    .btn-p:hover{background:var(--green-dim);transform:translateY(-3px);box-shadow:0 12px 32px rgba(193,255,114,.35)}
+    .btn-g{color:var(--white);padding:15px 30px;font-family:var(--font-d);font-size:14px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.15);border-radius:2px;transition:all .25s;cursor:none}
+    .btn-g:hover{border-color:var(--green);color:var(--green)}
+
+    /* SECTION */
+    section{padding:112px 48px;position:relative}
+    .slabel{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+    .slabel::before{content:'';width:22px;height:1px;background:var(--green)}
+    h2{font-family:var(--font-d);font-size:clamp(34px,5vw,62px);font-weight:800;letter-spacing:-.04em;line-height:1.05}
+    h2 .acc{color:var(--green)}
+
+    /* TICKER */
+    .ticker-wrap{background:var(--green);padding:13px 0;overflow:hidden;white-space:nowrap}
+    .ticker-inner{display:inline-flex;animation:tick 22s linear infinite}
+    .ticker-inner span{font-family:var(--font-d);font-size:13px;font-weight:700;color:var(--black);letter-spacing:.08em;text-transform:uppercase;padding:0 28px}
+    .ticker-inner .dot{color:rgba(0,0,0,.25);padding:0}
+    @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+    /* SERVIÇOS */
+    #servicos{background:var(--black-2)}
+    .s-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:56px;gap:32px;flex-wrap:wrap}
+    .s-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.055)}
+    .s-card{background:var(--black-2);padding:44px 38px;position:relative;overflow:hidden;transition:background .3s}
+    .s-card:hover{background:var(--black-3)}
+    .s-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--green);transition:width .4s}
+    .s-card:hover::after{width:100%}
+    .s-icon{font-size:30px;margin-bottom:22px;display:block}
+    .s-card h3{font-family:var(--font-d);font-size:19px;font-weight:700;letter-spacing:-.02em;margin-bottom:10px}
+    .s-card p{font-size:14px;color:var(--white-dim);line-height:1.7}
+    .s-gain{margin-top:18px;font-size:11px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
+
+    /* RESULTADOS (antigo cases) */
+    #resultados{background:var(--black)}
+    .r-intro{max-width:600px;margin-top:16px;font-size:15px;color:var(--white-dim);line-height:1.7}
+    .r-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+    .r-card{border:1px solid rgba(255,255,255,.07);padding:38px 34px;position:relative;transition:border-color .3s,transform .3s;background:var(--black-2)}
+    .r-card:hover{border-color:rgba(193,255,114,.28);transform:translateY(-6px)}
+    .r-setor{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--green);margin-bottom:22px}
+    .r-num{font-family:var(--font-d);font-size:54px;font-weight:800;color:var(--green);line-height:1;letter-spacing:-.04em}
+    .r-desc{font-size:15px;color:var(--white);margin-top:6px;font-weight:500}
+    .r-prob{font-size:13px;color:var(--white-dim);margin-top:14px;line-height:1.65;border-top:1px solid rgba(255,255,255,.055);padding-top:14px}
+    .r-badge{display:inline-flex;align-items:center;gap:6px;margin-top:18px;background:rgba(193,255,114,.08);border:1px solid rgba(193,255,114,.15);padding:5px 12px;border-radius:2px;font-size:10px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
+
+    /* PROCESSO */
+    #processo{background:var(--black-2)}
+    .p-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px}
+    .p-steps{display:flex;flex-direction:column}
+    .step{display:grid;grid-template-columns:56px 1fr;gap:22px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.055)}
+    .step:last-child{border-bottom:none}
+    .step-n{font-family:var(--font-d);font-size:12px;font-weight:700;color:var(--green);opacity:.45;padding-top:4px;transition:opacity .2s}
+    .step:hover .step-n{opacity:1}
+    .step h3{font-family:var(--font-d);font-size:17px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px;transition:color .2s}
+    .step:hover h3{color:var(--green)}
+    .step p{font-size:13px;color:var(--white-dim);line-height:1.7}
+    .p-vis{background:var(--black-3);border:1px solid rgba(193,255,114,.1);padding:44px;border-radius:4px;position:relative;overflow:hidden}
+    .p-vis::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;background:radial-gradient(circle,rgba(193,255,114,.07) 0%,transparent 70%)}
+    .p-stat{text-align:center;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.055)}
+    .p-stat:last-child{border-bottom:none;padding-bottom:0}
+    .p-stat:first-child{padding-top:0}
+    .p-stat-n{font-family:var(--font-d);font-size:50px;font-weight:800;color:var(--green);letter-spacing:-.05em}
+    .p-stat-l{font-size:12px;color:var(--white-dim);margin-top:5px}
+
+    /* POR QUE */
+    #porque{background:var(--green)}
+    #porque .slabel{color:var(--black)}
+    #porque .slabel::before{background:var(--black)}
+    #porque h2{color:var(--black)}
+    .pq-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:60px;background:rgba(0,0,0,.1)}
+    .pq-card{background:var(--green);padding:44px 40px;transition:background .25s}
+    .pq-card:hover{background:#d4ff8a}
+    .pq-n{font-family:var(--font-d);font-size:76px;font-weight:800;color:rgba(0,0,0,.06);line-height:1;letter-spacing:-.05em;margin-bottom:-18px}
+    .pq-card h3{font-family:var(--font-d);font-size:21px;font-weight:800;color:var(--black);letter-spacing:-.03em;margin-bottom:10px}
+    .pq-card p{font-size:14px;color:rgba(0,0,0,.6);line-height:1.7}
+
+    /* FUNDADOR */
+    #fundador{background:var(--black)}
+    .f-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:center;margin-top:64px}
+    .f-foto-wrap{position:relative}
+    .f-foto{width:100%;aspect-ratio:3/4;background:var(--black-3);border:1px solid rgba(193,255,114,.1);overflow:hidden;position:relative}
+    .f-foto img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;filter:grayscale(20%)}
+    .f-foto::after{content:'';position:absolute;bottom:0;left:0;right:0;height:30%;background:linear-gradient(to top,var(--black),transparent)}
+    .f-tag-foto{position:absolute;bottom:-16px;right:-16px;background:var(--green);padding:14px 20px;font-family:var(--font-d);font-size:12px;font-weight:700;color:var(--black);letter-spacing:.04em;text-transform:uppercase;z-index:2}
+    .f-content{}
+    .f-nome{font-family:var(--font-d);font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:8px}
+    .f-nome span{color:var(--green)}
+    .f-cargo{font-size:13px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:32px;display:flex;align-items:center;gap:10px}
+    .f-cargo::before{content:'';width:20px;height:1px;background:var(--green)}
+    .f-bio{font-size:16px;color:var(--white-dim);line-height:1.85;font-weight:300}
+    .f-bio strong{color:var(--white);font-weight:600}
+    .f-valores{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+    .f-valor{background:rgba(193,255,114,.07);border:1px solid rgba(193,255,114,.15);padding:8px 16px;border-radius:2px;font-size:12px;font-weight:600;color:var(--green);letter-spacing:.06em;text-transform:uppercase}
+    .f-social{display:flex;gap:12px;margin-top:36px;align-items:center}
+    .f-social-label{font-size:11px;color:var(--white-dim);text-transform:uppercase;letter-spacing:.1em}
+    .f-soc-link{width:38px;height:38px;border:1px solid rgba(255,255,255,.1);border-radius:2px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:16px;transition:all .2s;color:var(--white)}
+    .f-soc-link:hover{border-color:var(--green);background:rgba(193,255,114,.08)}
+
+    /* CLIENTES */
+    #clientes{background:var(--black-2)}
+    .cl-row{display:flex;gap:0;margin-top:52px;border:1px solid rgba(255,255,255,.07);flex-wrap:wrap}
+    .cl-logo{flex:1;min-width:140px;padding:38px 28px;display:flex;align-items:center;justify-content:center;border-right:1px solid rgba(255,255,255,.07);transition:background .3s}
+    .cl-logo:last-child{border-right:none}
+    .cl-logo:hover{background:rgba(255,255,255,.03)}
+    .cl-logo img{max-height:38px;max-width:120px;object-fit:contain;filter:brightness(0) invert(1);opacity:0.5;transition:opacity .3s}
+    .cl-logo:hover img{opacity:0.9}
+    .cl-placeholder{font-family:var(--font-d);font-size:13px;font-weight:700;color:rgba(255,255,255,.18);letter-spacing:.04em;text-transform:uppercase}
+
+    /* DEPOIMENTOS */
+    #depoimentos{background:var(--black)}
+    .d-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:60px}
+    .d-card{background:var(--black-2);border:1px solid rgba(255,255,255,.055);padding:34px 30px;transition:border-color .3s}
+    .d-card:hover{border-color:rgba(193,255,114,.18)}
+    .d-qt{font-size:38px;font-family:Georgia,serif;color:var(--green);line-height:1;margin-bottom:14px}
+    .d-text{font-size:14px;color:var(--white);line-height:1.8;font-style:italic;font-weight:300}
+    .d-auth{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.055);display:flex;align-items:center;gap:13px}
+    .d-av{width:40px;height:40px;background:var(--black-3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;border:1px solid rgba(193,255,114,.18);flex-shrink:0}
+    .d-name{font-family:var(--font-d);font-size:13px;font-weight:700}
+    .d-role{font-size:11px;color:var(--white-dim);margin-top:2px}
+    .stars{color:var(--green);font-size:11px;letter-spacing:2px}
+
+    /* FAQ */
+    #faq{background:var(--black-2)}
+    .faq-wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:60px;align-items:start}
+    .faq-list{display:flex;flex-direction:column}
+    .faq-item{border-bottom:1px solid rgba(255,255,255,.07);overflow:hidden}
+    .faq-q{width:100%;background:none;border:none;color:var(--white);font-family:var(--font-d);font-size:15px;font-weight:600;text-align:left;padding:22px 0;cursor:none;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:color .2s}
+    .faq-q:hover,.faq-q.active{color:var(--green)}
+    .faq-icon{width:26px;height:26px;border:1px solid rgba(193,255,114,.28);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:15px;color:var(--green);transition:transform .3s}
+    .faq-q.active .faq-icon{transform:rotate(45deg)}
+    .faq-a{font-size:13px;color:var(--white-dim);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+    .faq-a.open{max-height:280px;padding-bottom:22px}
+    .faq-box{background:var(--black-3);border:1px solid rgba(193,255,114,.13);padding:44px 38px;border-radius:4px}
+    .faq-box h3{font-family:var(--font-d);font-size:26px;font-weight:800;letter-spacing:-.03em;margin-bottom:14px}
+    .faq-box h3 span{color:var(--green)}
+    .faq-box p{font-size:14px;color:var(--white-dim);line-height:1.7;margin-bottom:28px}
+
+    /* DIAGNÓSTICO */
+    #diagnostico{background:var(--black)}
+    .diag-wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:60px}
+    .diag-info p{font-size:15px;color:var(--white-dim);line-height:1.75;margin-bottom:36px;margin-top:18px}
+    .i-row{display:flex;align-items:center;gap:13px;margin-bottom:14px;font-size:14px;color:var(--white-dim)}
+    .i-row a{color:var(--white-dim);text-decoration:none;transition:color .2s}
+    .i-row a:hover{color:var(--green)}
+    .i-icon{width:34px;height:34px;background:rgba(193,255,114,.07);border:1px solid rgba(193,255,114,.13);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+    .form-box{background:var(--black-2);border:1px solid rgba(255,255,255,.07);padding:44px 40px}
+    .form-box h3{font-family:var(--font-d);font-size:21px;font-weight:700;letter-spacing:-.02em;margin-bottom:28px}
+    .fg{margin-bottom:18px}
+    label{display:block;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--white-dim);margin-bottom:7px}
+    input,select,textarea{width:100%;background:var(--black-3);border:1px solid rgba(255,255,255,.09);color:var(--white);font-family:var(--font-b);font-size:14px;padding:13px 15px;border-radius:2px;outline:none;transition:border-color .2s;-webkit-appearance:none;appearance:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--green)}
+    input::placeholder,textarea::placeholder{color:rgba(255,255,255,.18)}
+    select option{background:var(--black-3)}
+    textarea{resize:vertical;min-height:90px}
+    .f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .f-submit{width:100%;background:var(--green);color:var(--black);border:none;padding:15px 22px;font-family:var(--font-d);font-size:14px;font-weight:700;border-radius:2px;cursor:none;margin-top:6px;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:10px}
+    .f-submit:hover{background:var(--green-dim);transform:translateY(-2px);box-shadow:0 10px 28px rgba(193,255,114,.28)}
+    .f-note{font-size:11px;color:var(--white-dim);text-align:center;margin-top:12px}
+
+    /* FOOTER */
+    footer{background:var(--black-3);border-top:1px solid rgba(255,255,255,.055);padding:60px 48px 38px}
+    .ft-top{display:flex;justify-content:space-between;align-items:flex-start;gap:44px;margin-bottom:44px;flex-wrap:wrap}
+    .ft-brand p{font-size:13px;color:var(--white-dim);max-width:260px;margin-top:11px;line-height:1.7}
+    .ft-links h4{font-family:var(--font-d);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;color:var(--white-dim)}
+    .ft-links ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+    .ft-links a{font-size:13px;color:var(--white-dim);text-decoration:none;transition:color .2s}
+    .ft-links a:hover{color:var(--green)}
+    .ft-bot{border-top:1px solid rgba(255,255,255,.055);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+    .ft-bot p{font-size:11px;color:rgba(255,255,255,.18)}
+    .soc-links{display:flex;gap:10px;margin-top:18px}
+    .soc-a{width:36px;height:36px;border:1px solid rgba(255,255,255,.09);border-radius:2px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;transition:all .2s}
+    .soc-a:hover{border-color:var(--green);background:rgba(193,255,114,.07)}
+
+    /* WA FLOAT */
+    .wa-f{position:fixed;bottom:30px;right:30px;z-index:200;display:flex;align-items:center;gap:11px;text-decoration:none}
+    .wa-btn{width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px;box-shadow:0 8px 22px rgba(37,211,102,.38);transition:all .25s;animation:wap 3s infinite}
+    @keyframes wap{0%,100%{box-shadow:0 8px 22px rgba(37,211,102,.38)}50%{box-shadow:0 8px 38px rgba(37,211,102,.65)}}
+    .wa-f:hover .wa-btn{transform:scale(1.1)}
+    .wa-lbl{background:var(--black-2);border:1px solid rgba(255,255,255,.09);padding:8px 15px;border-radius:2px;font-size:12px;font-weight:600;color:var(--white);white-space:nowrap;opacity:0;transform:translateX(10px);transition:all .3s}
+    .wa-f:hover .wa-lbl{opacity:1;transform:translateX(0)}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+
+    /* MOBILE */
+    @media(max-width:1024px){
+      nav{padding:18px 22px}
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      section{padding:72px 22px}
+      #hero{padding:0 22px 56px}
+      .hero-metrics{display:none}
+      .s-grid,.r-grid,.d-grid,.pq-grid{grid-template-columns:1fr}
+      .p-grid,.faq-wrap,.diag-wrap,.f-wrap{grid-template-columns:1fr;gap:44px}
+      .ft-top{flex-direction:column}
+      .ft-bot{flex-direction:column;align-items:flex-start}
+      .f2{grid-template-columns:1fr}
+      .cl-row{flex-direction:column}
+      .cl-logo{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}
+      .f-tag-foto{bottom:-12px;right:-8px;font-size:10px;padding:10px 14px}
+    }
+    .nav-open .nav-links{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--black);z-index:101;align-items:center;justify-content:center;gap:30px}
+    .nav-open .nav-links a{font-size:20px}
+    .nav-open .close-nav{display:block}
+  </style>
 </head>
-<body class="overflow-x-hidden">
+<body>
 
-    <a href="https://wa.me/5541987834430?text=Oi!%20Vim%20pelo%20site%20da%20Altivy.%20Tenho%20uma%20empresa%20e%20quero%20entender%20como%20voc%C3%AAs%20podem%20me%20ajudar%20a%20crescer." 
-       target="_blank" rel="noopener noreferrer"
-       class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center">
-        <i class="fab fa-whatsapp text-2xl"></i>
-    </a>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curR"></div>
 
-    <header class="w-full bg-darkBg/90 backdrop-blur-md sticky top-0 z-40 border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="font-display font-extrabold text-xl tracking-tight text-white flex items-center gap-2">
-                <div class="w-3 h-3 bg-neonGreen rounded-full"></div> ALTIVY
-            </div>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-gray-300">
-                <a href="#servicos" class="hover:text-neonGreen transition">Sobre</a>
-                <a href="#servicos" class="hover:text-neonGreen transition">Serviços</a>
-                <a href="#cases" class="hover:text-neonGreen transition">Cases</a>
-                <a href="#processo" class="hover:text-neonGreen transition">Prazos</a>
-                <a href="#faq" class="hover:text-neonGreen transition">Dúvidas</a>
-            </nav>
-            <div>
-                <a href="#contato" class="bg-neonGreen text-darkBg font-display font-bold px-4 py-2.5 rounded-md hover:bg-white transition text-xs uppercase tracking-wider">
-                    Agendar Diagnóstico Gratuito
-                </a>
-            </div>
-        </div>
-    </header>
+<nav id="nav">
+  <a href="#" class="logo">altivy<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#resultados">Resultados</a></li>
+    <li><a href="#processo">Processo</a></li>
+    <li><a href="#fundador">Sobre</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#diagnostico" class="nav-cta">Diagnóstico grátis</a></li>
+  </ul>
+  <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="close-nav" id="closeN">✕</button>
+</nav>
 
-    <section class="relative min-h-[80vh] flex items-center px-6 py-20 gradient-hero">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
-            <div class="lg:col-span-7">
-                <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight mb-6 leading-tight">
-                    Marcas que crescem não esperam — <span class="text-neonGreen">elas contratam estratégia.</span>
-                </h1>
-                <p class="text-gray-400 text-base sm:text-lg max-w-xl mb-8 leading-relaxed">
-                    Transformamos seu negócio com estratégias de growth de alto impacto: Tráfego Pago, Branding, Redes Sociais e SEO para E-commerce, SaaS, Varejo e Saúde.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#contato" class="bg-neonGreen text-darkBg font-display font-bold px-6 py-3.5 rounded-lg text-sm hover:bg-white transition shadow-lg shadow-neonGreen/10 uppercase tracking-wider">
-                        Quero um Diagnóstico
-                    </a>
-                    <a href="#cases" class="border border-white/20 text-white font-display font-bold px-6 py-3.5 rounded-lg text-sm hover:bg-white/10 transition uppercase tracking-wider">
-                        Ver Cases
-                    </a>
-                </div>
-            </div>
-            <div class="lg:col-span-5 flex justify-center relative">
-                <div class="absolute w-72 h-72 bg-neonGreen/20 blur-[120px] rounded-full top-10"></div>
-                <img src="https://assets.codepen.io/12345/rocket-placeholder.png" alt="Growth Rocket Element" class="w-80 h-auto animate-bounce duration-[6000ms] relative z-10 filter drop-shadow-2xl" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop'">
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">GROWTH</div>
+  <div class="hero-tag">Agência de Growth Marketing — 100% Remoto</div>
+  <h1>Growth não é<br>sorte. <span class="acc">É método.</span></h1>
+  <p class="hero-sub">Tráfego pago, branding e automação que mostram o número — não a promessa. Para e-commerce, SaaS, varejo e saúde.</p>
+  <div class="hero-actions">
+    <a href="#diagnostico" class="btn-p">Quero diagnóstico gratuito <span>→</span></a>
+    <a href="#resultados" class="btn-g">Ver resultados</a>
+  </div>
+  <div class="hero-metrics">
+    <div class="metric"><div class="metric-num">48h</div><div class="metric-label">Para campanha no ar</div></div>
+    <div class="m-div"></div>
+    <div class="metric"><div class="metric-num">100%</div><div class="metric-label">Atendimento direto, sem estagiário</div></div>
+    <div class="m-div"></div>
+    <div class="metric"><div class="metric-num">0</div><div class="metric-label">Fidelidade contratual</div></div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
 
-    <section id="servicos" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="mb-16">
-            <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Nossos Serviços</span>
-            <h2 class="font-display font-bold text-3xl sm:text-4xl">O que você ganha, não o que fazemos!</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-darkCard/40 rounded-2xl border border-white/5 overflow-hidden group hover:border-neonGreen/30 transition-all p-6">
-                <div class="h-48 rounded-xl bg-gray-900 mb-6 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop');"></div>
-                <h3 class="font-display font-bold text-xl mb-2 text-white">Branding & Identidade Visual</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Construção de marcas memoráveis, paletas de cores expressivas e design sênior para destacar seu posicionamento no mercado.</p>
-            </div>
-            <div class="bg-darkCard/40 rounded-2xl border border-white/5 overflow-hidden group hover:border-neonGreen/30 transition-all p-6">
-                <div class="h-48 rounded-xl bg-gray-900 mb-6 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop');"></div>
-                <h3 class="font-display font-bold text-xl mb-2 text-white">Estratégia & Posicionamento</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Definição dos melhores caminhos digitais e canais de tração com foco em ROI, eliminando o achismo comercial do seu negócio.</p>
-            </div>
-            <div class="bg-darkCard/40 rounded-2xl border border-white/5 overflow-hidden group hover:border-neonGreen/30 transition-all p-6">
-                <div class="h-48 rounded-xl bg-gray-900 mb-6 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=600&auto=format&fit=crop');"></div>
-                <h3 class="font-display font-bold text-xl mb-2 text-white">Social Media & Conteúdo</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Transformamos suas redes sociais em canais editoriais de vendas robustos, gerando desejo pelo seu produto ou serviço.</p>
-            </div>
-            <div class="bg-darkCard/40 rounded-2xl border border-white/5 overflow-hidden group hover:border-neonGreen/30 transition-all p-6">
-                <div class="h-48 rounded-xl bg-gray-900 mb-6 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=600&auto=format&fit=crop');"></div>
-                <h3 class="font-display font-bold text-xl mb-2 text-white">Performance & Tráfego Pago</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Anúncios de alta conversão no Google, Meta e TikTok monitorados diretamente por estrategistas focados em lucratividade.</p>
-            </div>
-        </div>
-    </section>
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span>Tráfego Pago</span><span class="dot">✦</span><span>Branding</span><span class="dot">✦</span><span>SEO</span><span class="dot">✦</span><span>Social Media</span><span class="dot">✦</span><span>Criação de Sites</span><span class="dot">✦</span><span>Automação WhatsApp</span><span class="dot">✦</span><span>Growth Marketing</span><span class="dot">✦</span><span>Diagnóstico Gratuito</span><span class="dot">✦</span>
+    <span>Tráfego Pago</span><span class="dot">✦</span><span>Branding</span><span class="dot">✦</span><span>SEO</span><span class="dot">✦</span><span>Social Media</span><span class="dot">✦</span><span>Criação de Sites</span><span class="dot">✦</span><span>Automação WhatsApp</span><span class="dot">✦</span><span>Growth Marketing</span><span class="dot">✦</span><span>Diagnóstico Gratuito</span><span class="dot">✦</span>
+  </div>
+</div>
 
-    <section id="cases" class="py-24 bg-zinc-950 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Resultados Reais</span>
-                <h2 class="font-display font-bold text-3xl sm:text-4xl">Cases de sucesso que falam por si</h2>
-            </div>
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="s-header">
+    <div>
+      <div class="slabel">Serviços</div>
+      <h2>O que a Altivy<br><span class="acc">entrega</span></h2>
+    </div>
+    <p style="color:var(--white-dim);font-size:14px;max-width:320px;line-height:1.7">Cada serviço com entregável claro, prazo definido e métrica de sucesso estabelecida antes de começar.</p>
+  </div>
+  <div class="s-grid reveal">
+    <div class="s-card"><span class="s-icon">⚡</span><h3>Tráfego Pago</h3><p>Google Ads, Meta Ads e TikTok Ads gerenciados por estrategistas sênior. Você acompanha cada real investido e seu retorno em tempo real.</p><div class="s-gain">→ Mais clientes qualificados, menos custo por lead</div></div>
+    <div class="s-card"><span class="s-icon">📱</span><h3>Gestão de Redes Sociais</h3><p>Conteúdo que posiciona marca e gera resultado comercial — não só curtidas. Calendário editorial, produção e análise de performance mensal.</p><div class="s-gain">→ Autoridade de marca + audiência compradora</div></div>
+    <div class="s-card"><span class="s-icon">🎨</span><h3>Branding & Identidade</h3><p>Posicionamento, identidade visual e linguagem de marca que diferenciam sua empresa em mercados saturados. Do naming ao manual de marca.</p><div class="s-gain">→ Marca reconhecida, preço mais alto, menos concorrência</div></div>
+    <div class="s-card"><span class="s-icon">🔍</span><h3>SEO & Conteúdo</h3><p>Estratégia de conteúdo e otimização técnica para aparecer no Google quando seu cliente está procurando — sem depender de anúncios para sempre.</p><div class="s-gain">→ Tráfego orgânico crescente e recorrente</div></div>
+    <div class="s-card"><span class="s-icon">💻</span><h3>Criação de Sites</h3><p>Sites e landing pages com foco em conversão — não só em estética. UX, velocidade, SEO on-page e integração com ferramentas de marketing.</p><div class="s-gain">→ Site que vende, não só apresenta</div></div>
+    <div class="s-card"><span class="s-icon">🤖</span><h3>Automação WhatsApp</h3><p>Fluxos automatizados de atendimento, qualificação e follow-up via WhatsApp. Seu time fecha mais, sem aumentar headcount.</p><div class="s-gain">→ Mais vendas fechadas, menos trabalho manual</div></div>
+  </div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-[#24311d] rounded-2xl p-8 border border-emerald-500/10 flex flex-col justify-between relative overflow-hidden group">
-                    <div>
-                        <span class="text-xs uppercase tracking-widest font-bold text-emerald-400">Crescimento</span>
-                        <div class="text-5xl font-display font-black text-neonGreen my-4">+320%</div>
-                        <h3 class="font-display font-bold text-xl text-white mb-2">Allibel Doces Gourmet</h3>
-                        <p class="text-gray-300 text-sm leading-relaxed mb-6">Transformamos a identidade visual e toda a estratégia de tráfego orgânico e pago, alcançando um faturamento recorde e o reconhecimento de mercado.</p>
-                    </div>
-                    <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur flex items-center justify-center self-end"><i class="fas fa-cookie-bite text-white text-xl"></i></div>
-                </div>
+<!-- RESULTADOS -->
+<section id="resultados">
+  <div class="slabel">Resultados</div>
+  <h2>Números que <span class="acc">orientam</span><br>cada decisão</h2>
+  <p class="r-intro reveal">Cada projeto começa com metas claras e termina com dados reais. Esses são resultados típicos alcançados com nossa metodologia — os seus dependem do seu negócio, mercado e investimento.</p>
+  <div class="r-grid reveal">
+    <div class="r-card">
+      <div class="r-setor">E-commerce / Varejo</div>
+      <div class="r-num">4–6×</div>
+      <div class="r-desc">ROAS médio em tráfego pago</div>
+      <div class="r-prob">Campanhas reestruturadas com segmentação precisa, criativos testados e landing pages otimizadas para conversão.</div>
+      <div class="r-badge">✦ Resultado típico</div>
+    </div>
+    <div class="r-card">
+      <div class="r-setor">Saúde / Serviços Locais</div>
+      <div class="r-num">+200%</div>
+      <div class="r-desc">de leads orgânicos em 90 dias</div>
+      <div class="r-prob">Combinação de SEO local, presença consistente nas redes e Google Meu Negócio otimizado para capturar demanda ativa.</div>
+      <div class="r-badge">✦ Resultado típico</div>
+    </div>
+    <div class="r-card">
+      <div class="r-setor">SaaS / B2B</div>
+      <div class="r-num">−40%</div>
+      <div class="r-desc">no custo de aquisição de clientes</div>
+      <div class="r-prob">Automação de WhatsApp + qualificação de leads + funil de nutrição reduzindo desperdício de verba e tempo de vendas.</div>
+      <div class="r-badge">✦ Resultado típico</div>
+    </div>
+  </div>
+  <p class="reveal" style="text-align:center;margin-top:32px;color:var(--white-dim);font-size:12px">Resultados variam por segmento, investimento e maturidade do negócio. Na reunião de diagnóstico estimamos o potencial real do seu caso.</p>
+</section>
 
-                <div class="bg-[#1b2e3c] rounded-2xl p-8 border border-blue-500/10 flex flex-col justify-between relative overflow-hidden group">
-                    <div>
-                        <span class="text-xs uppercase tracking-widest font-bold text-blue-400">Escalabilidade</span>
-                        <div class="text-5xl font-display font-black text-neonGreen my-4">+180%</div>
-                        <h3 class="font-display font-bold text-xl text-white mb-2">Focinho - Produtos PET</h3>
-                        <h4 class="text-gray-300 text-sm leading-relaxed mb-6">Criamos marcas que vendem, alinhando a estratégia de conteúdo para nichos específicos. Posicionamento estratégico premium gerando audiência engajada.</h4>
-                    </div>
-                    <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur flex items-center justify-center self-end"><i class="fas fa-dog text-white text-xl"></i></div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- PROCESSO -->
+<section id="processo">
+  <div class="slabel">Como trabalhamos</div>
+  <h2>Sem <span class="acc">caixa-preta.</span><br>Método claro.</h2>
+  <div class="p-grid">
+    <div class="p-steps reveal">
+      <div class="step"><div class="step-n">01</div><div><h3>Diagnóstico</h3><p>Análise gratuita do seu negócio, concorrência, canais atuais e gaps de crescimento. Você sai com clareza — mesmo que não nos contrate.</p></div></div>
+      <div class="step"><div class="step-n">02</div><div><h3>Estratégia</h3><p>Plano de ação com canais, orçamento, KPIs e cronograma. Sem promessa genérica — só o que faz sentido para o seu momento de negócio.</p></div></div>
+      <div class="step"><div class="step-n">03</div><div><h3>Execução</h3><p>Atendimento direto — você fala com quem executa, não com intermediário. Relatórios em tempo real e reunião quinzenal de alinhamento.</p></div></div>
+      <div class="step"><div class="step-n">04</div><div><h3>Escala</h3><p>O que funciona, escalamos. O que não funciona, ajustamos rápido. Ciclo de melhoria contínua com foco em ROI crescente.</p></div></div>
+    </div>
+    <div class="p-vis reveal">
+      <div class="p-stat"><div class="p-stat-n">48h</div><div class="p-stat-l">Prazo máximo para campanha no ar após aprovação</div></div>
+      <div class="p-stat"><div class="p-stat-n">100%</div><div class="p-stat-l">Atendimento direto — sem estagiário na sua conta</div></div>
+      <div class="p-stat"><div class="p-stat-n">2×/mês</div><div class="p-stat-l">Reuniões de alinhamento com relatório completo</div></div>
+    </div>
+  </div>
+</section>
 
-    <section id="processo" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="mb-16">
-            <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Como Trabalhamos</span>
-            <h2 class="font-display font-bold text-3xl sm:text-4xl">Processo transparente, sem caixa-preta</h2>
-        </div>
+<!-- POR QUE ALTIVY -->
+<section id="porque">
+  <div class="slabel">Diferenciais</div>
+  <h2>Por que a Altivy<br>e não outra agência</h2>
+  <div class="pq-grid reveal">
+    <div class="pq-card"><div class="pq-n">01</div><h3>Você fala com quem executa</h3><p>Nenhum estagiário gerencia sua conta. O estrategista que apresenta o plano é o mesmo que opera as campanhas e responde suas perguntas.</p></div>
+    <div class="pq-card"><div class="pq-n">02</div><h3>Método próprio de growth</h3><p>Diagnóstico → Estratégia → Execução → Escala. Processo documentado e replicável, não achismo. Cada decisão tem dado por trás.</p></div>
+    <div class="pq-card"><div class="pq-n">03</div><h3>Contrato sem fidelidade</h3><p>Porque resultado retém — não cláusula contratual. Se não estiver entregando, você pode sair. Esse é o nosso incentivo para ser bom.</p></div>
+    <div class="pq-card"><div class="pq-n">04</div><h3>Visão criativa + orientação a dados</h3><p>Design que vende e performance que escala. Não escolha entre estética e resultado — na Altivy, os dois andam juntos.</p></div>
+  </div>
+</section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
-            <div class="bg-darkCard p-6 rounded-xl border border-white/5">
-                <span class="text-neonGreen font-display font-bold text-xl block mb-2">01</span>
-                <h4 class="font-display font-bold text-white mb-1">Diagnóstico</h4>
-                <p class="text-gray-400 text-xs">Análise detalhada do seu negócio e infraestrutura.</p>
-            </div>
-            <div class="bg-darkCard p-6 rounded-xl border border-white/5">
-                <span class="text-neonGreen font-display font-bold text-xl block mb-2">02</span>
-                <h4 class="font-display font-bold text-white mb-1">Estratégia</h4>
-                <p class="text-gray-400 text-xs">Definição dos canais e plano de ação estruturado.</p>
-            </div>
-            <div class="bg-darkCard p-6 rounded-xl border border-white/5">
-                <span class="text-neonGreen font-display font-bold text-xl block mb-2">03</span>
-                <h4 class="font-display font-bold text-white mb-1">Execução</h4>
-                <p class="text-gray-400 text-xs">Implementação ágil e criativos de alta conversão.</p>
-            </div>
-            <div class="bg-darkCard p-6 rounded-xl border border-white/5">
-                <span class="text-neonGreen font-display font-bold text-xl block mb-2">04</span>
-                <h4 class="font-display font-bold text-white mb-1">Resultados</h4>
-                <p class="text-gray-400 text-xs">Análise de métricas, otimizações e escala contínua.</p>
-            </div>
-        </div>
+<!-- FUNDADOR -->
+<section id="fundador">
+  <div class="f-wrap">
+    <div class="f-foto-wrap reveal">
+      <div class="f-foto">
+        <img src="images/lucas-criador.png" alt="Lucas — Fundador da Altivy" />
+      </div>
+      <div class="f-tag-foto">Fundador & Estrategista</div>
+    </div>
+    <div class="f-content reveal">
+      <div class="slabel">Quem está por trás</div>
+      <h2 class="f-nome">Lucas<span>.</span></h2>
+      <div class="f-cargo">Fundador & Head Criativo</div>
+      <p class="f-bio">
+        Tem pessoas que entram no corporativo e ficam. Eu saí.<br><br>
+        Depois de anos no mundo empresarial, entendi que o que realmente me movia era <strong>criar — marcas, estratégias, experiências visuais</strong> que fazem negócios crescerem. Troquei a segurança de um cargo pelo risco calculado de construir algo com propósito.<br><br>
+        A Altivy nasceu dessa virada: <strong>unir o olhar criativo de quem respira design com a mentalidade orientada a resultado de quem entende de negócio.</strong> Cada projeto aqui é tratado como se fosse meu — porque no fundo, é.
+      </p>
+      <div class="f-valores">
+        <span class="f-valor">Design estratégico</span>
+        <span class="f-valor">Orientado a dados</span>
+        <span class="f-valor">Atendimento direto</span>
+        <span class="f-valor">Sem fórmula pronta</span>
+      </div>
+      <div class="f-social">
+        <span class="f-social-label">Siga</span>
+        <a href="https://www.instagram.com/altivy.marketing/" target="_blank" class="f-soc-link" rel="noopener" aria-label="Instagram">📸</a>
+        <a href="https://wa.me/5541987834430" target="_blank" class="f-soc-link" rel="noopener" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="bg-darkCard/40 border border-white/5 p-8 rounded-2xl">
-            <h3 class="font-display font-bold text-xl mb-6 text-white">Prazos e Investimento</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h5 class="text-neonGreen text-xs font-bold uppercase tracking-wider mb-2">Diagnóstico Gratuito</h5>
-                    <p class="text-gray-400 text-xs leading-relaxed">Reunião estratégica de 30 min para analisar seu negócio e propor soluções imediatas.</p>
-                </div>
-                <div>
-                    <h5 class="text-neonGreen text-xs font-bold uppercase tracking-wider mb-2">Prazo Médio</h5>
-                    <p class="text-gray-400 text-xs leading-relaxed">Projetos iniciam em até 7 dias úteis. Resultados visíveis em suas campanhas entre 15 a 30 dias.</p>
-                </div>
-                <div>
-                    <h5 class="text-neonGreen text-xs font-bold uppercase tracking-wider mb-2">Sem Fidelidade</h5>
-                    <p class="text-gray-400 text-xs leading-relaxed">Contratos mensais. Permanecemos juntos pelo valor entregue e resultados reais gerados.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- CLIENTES -->
+<section id="clientes">
+  <div class="slabel">Clientes</div>
+  <h2>Marcas que <span class="acc">confiam</span><br>na Altivy</h2>
+  <div class="cl-row reveal">
+    <div class="cl-logo"><img src="images/allibel-logo.png" alt="Allibel" /></div>
+    <div class="cl-logo"><div class="cl-placeholder">[Cliente 02]</div></div>
+    <div class="cl-logo"><div class="cl-placeholder">[Cliente 03]</div></div>
+    <div class="cl-logo"><div class="cl-placeholder">[Cliente 04]</div></div>
+  </div>
+</section>
 
-    <section id="faq" class="py-24 bg-zinc-950/60 border-t border-white/5">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Dúvidas Frequentes</span>
-                <h2 class="font-display font-bold text-3xl">Perguntas comuns respondidas</h2>
-            </div>
+<!-- DEPOIMENTOS -->
+<section id="depoimentos">
+  <div class="slabel">Depoimentos</div>
+  <h2>O que os clientes<br><span class="acc">falam</span></h2>
+  <div class="d-grid reveal">
+    <div class="d-card"><div class="d-qt">"</div><p class="d-text">A Altivy não entregou só um site bonito — entregou uma marca que a gente se orgulha de mostrar. É raro encontrar alguém que une estética com estratégia de verdade.</p><div class="d-auth"><div class="d-av">👤</div><div><div class="stars">★★★★★</div><div class="d-name">[Nome do Cliente]</div><div class="d-role">Fundador — [Empresa]</div></div></div></div>
+    <div class="d-card"><div class="d-qt">"</div><p class="d-text">Clareza total desde o primeiro contato. Sem enrolação, sem promessa vazia. Cada semana tinha um relatório mostrando o que estava funcionando e o próximo passo.</p><div class="d-auth"><div class="d-av">👤</div><div><div class="stars">★★★★★</div><div class="d-name">[Nome do Cliente]</div><div class="d-role">CEO — [Empresa]</div></div></div></div>
+    <div class="d-card"><div class="d-qt">"</div><p class="d-text">Antes eu gastava em anúncio sem saber se estava funcionando. Hoje acompanho cada resultado em tempo real e seis de onde vem cada cliente. Mudou o jogo.</p><div class="d-auth"><div class="d-av">👤</div><div><div class="stars">★★★★★</div><div class="d-name">[Nome do Cliente]</div><div class="d-role">Proprietário — [Empresa]</div></div></div></div>
+  </div>
+  <p class="reveal" style="margin-top:24px;color:var(--white-dim);font-size:12px;text-align:center">Substitua pelos depoimentos reais dos seus clientes — nome, cargo e empresa tornam o testemunho muito mais poderoso.</p>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-darkCard/40 border border-white/5 p-6 rounded-xl">
-                    <h4 class="font-display font-bold text-white text-sm mb-2">Qual é o investimento mínimo?</h4>
-                    <p class="text-gray-400 text-xs leading-relaxed">Não temos investimento mínimo fixo. Cada projeto é customizado conforme seu orçamento e objetivos práticos. Começamos com o diagnóstico gratuito.</p>
-                </div>
-                <div class="bg-darkCard/40 border border-white/5 p-6 rounded-xl">
-                    <h4 class="font-display font-bold text-white text-sm mb-2">Quanto tempo leva para ver resultados?</h4>
-                    <p class="text-gray-400 text-xs leading-relaxed">Resultados iniciais aparecem em 15 dias. Crescimento consistente em um ciclo de 60 a 90 dias. Tudo depende do seu nicho de mercado.</p>
-                </div>
-                <div class="bg-darkCard/40 border border-white/5 p-6 rounded-xl">
-                    <h4 class="font-display font-bold text-white text-sm mb-2">Vocês trabalham 100% remoto?</h4>
-                    <p class="text-gray-400 text-xs leading-relaxed">Sim! Atendemos clientes em todo o Brasil e exterior. Utilizamos reuniões rápidas em vídeo e canais integrados para manter uma comunicação dinâmica.</p>
-                </div>
-                <div class="bg-darkCard/40 border border-white/5 p-6 rounded-xl">
-                    <h4 class="font-display font-bold text-white text-sm mb-2">Há contrato de fidelidade?</h4>
-                    <p class="text-gray-400 text-xs leading-relaxed">Não. Contratos mensais sem multas abusivas. Você mantém a parceria pelo ROI e crescimento, não por amarras jurídicas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- FAQ -->
+<section id="faq">
+  <div class="slabel">FAQ</div>
+  <h2>Perguntas <span class="acc">diretas,</span><br>respostas diretas</h2>
+  <div class="faq-wrap">
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Tem contrato de fidelidade?<span class="faq-icon">+</span></button><div class="faq-a">Não. Trabalhamos sem fidelidade porque acreditamos que resultado retém — não cláusula contratual. Você pode encerrar com 30 dias de aviso. Simples assim.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Qual o investimento mínimo?<span class="faq-icon">+</span></button><div class="faq-a">Depende do escopo. Nossa política é transparente: na reunião de diagnóstico apresentamos a proposta com valores detalhados antes de qualquer compromisso. Sem surpresa.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Em quanto tempo vejo resultado?<span class="faq-icon">+</span></button><div class="faq-a">Tráfego pago: primeiros dados em 7–14 dias. Resultado consistente em 30–60 dias. SEO e branding têm impacto crescente a partir de 90 dias. Definimos metas antes de começar.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Como funciona o onboarding?<span class="faq-icon">+</span></button><div class="faq-a">Diagnóstico → proposta → onboarding em 5 dias úteis → campanha no ar em até 48h após aprovação dos criativos. Tudo documentado e acessível a você.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Atendem só o Paraná ou é nacional?<span class="faq-icon">+</span></button><div class="faq-a">100% remoto, atendemos todo o Brasil. Nossa base é Guaratuba, PR, mas clientes estão em São Paulo, Rio, Curitiba e outros estados.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Vocês pedem o login das minhas redes?<span class="faq-icon">+</span></button><div class="faq-a">Trabalhamos via Business Manager ou acesso gerenciado — nunca pedimos sua senha pessoal. Você mantém controle total da sua conta sempre.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">O diagnóstico é mesmo gratuito?<span class="faq-icon">+</span></button><div class="faq-a">Sim, sem compromisso e sem pitch de vendas. Uma reunião de 45 min com Lucas, que analisa seu negócio e apresenta os gaps encontrados — contrate ou não.</div></div>
+    </div>
+    <div class="faq-box reveal">
+      <h3>Ainda tem<br><span>dúvidas?</span></h3>
+      <p>Manda uma mensagem no WhatsApp. Lucas responde na hora — sem chatbot, sem fila de atendimento.</p>
+      <a href="https://wa.me/5541987834430?text=Oi!%20Vim%20pelo%20site%20da%20Altivy%20e%20tenho%20uma%20d%C3%BAvida.%20Pode%20me%20ajudar%3F" class="btn-p" target="_blank" rel="noopener">Falar com o Lucas →</a>
+    </div>
+  </div>
+</section>
 
-    <section id="contato" class="py-24 gradient-footer">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-neonGreen font-display font-bold text-xs uppercase tracking-widest block mb-2">Vamos Conversar?</span>
-                <h2 class="font-display font-bold text-4xl mb-4">Diagnóstico gratuito</h2>
-                <p class="text-gray-400 text-sm mb-8 leading-relaxed max-w-md">Olhamos suas campanhas por dentro e apontamos os furos que estão fazendo sua empresa gastar verba à toa.</p>
-                
-                <div class="space-y-4 text-xs text-gray-300">
-                    <div class="flex items-center gap-3"><i class="fab fa-whatsapp text-neonGreen text-base"></i> (41) 98783-4430</div>
-                    <div class="flex items-center gap-3"><i class="far fa-envelope text-neonGreen text-base"></i> altivygrowth@gmail.com</div>
-                    <div class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-neonGreen text-base"></i> Atendimento 100% Remoto</div>
-                    <div class="flex items-center gap-3"><i class="far fa-clock text-neonGreen text-base"></i> Segunda a Sexta, Horário Comercial</div>
-                </div>
-            </div>
+<!-- DIAGNÓSTICO -->
+<section id="diagnostico">
+  <div class="diag-wrap">
+    <div class="diag-info reveal">
+      <div class="slabel">Diagnóstico gratuito</div>
+      <h2>Vamos falar<br>sobre o seu <span class="acc">negócio</span></h2>
+      <p>Reunião de 45 minutos com Lucas. Você sai com clareza sobre o que está limitando seu crescimento — mesmo que não nos contrate.</p>
+      <div class="i-row"><div class="i-icon">📱</div><a href="https://wa.me/5541987834430" target="_blank">(41) 98783-4430</a></div>
+      <div class="i-row"><div class="i-icon">✉️</div><a href="mailto:altivygrowth@gmail.com">altivygrowth@gmail.com</a></div>
+      <div class="i-row"><div class="i-icon">🕐</div><span>Seg – Sex, horário comercial</span></div>
+      <div class="i-row"><div class="i-icon">📍</div><span>100% remoto — atendemos todo o Brasil</span></div>
+      <div class="i-row"><div class="i-icon">📸</div><a href="https://www.instagram.com/altivy.marketing/" target="_blank" rel="noopener">@altivy.marketing</a></div>
+    </div>
+    <div class="form-box reveal">
+      <h3>Pedir diagnóstico gratuito</h3>
+      <div class="f2">
+        <div class="fg"><label>Seu nome *</label><input type="text" id="fn" placeholder="João Silva" /></div>
+        <div class="fg"><label>WhatsApp *</label><input type="tel" id="fw" placeholder="(41) 9 9999-9999" /></div>
+      </div>
+      <div class="fg"><label>Empresa *</label><input type="text" id="fe" placeholder="Nome da sua empresa" /></div>
+      <div class="fg"><label>Segmento *</label><select id="fs"><option value="">Selecione seu segmento</option><option>E-commerce</option><option>SaaS / Software</option><option>Varejo / Loja Física</option><option>Saúde / Clínica</option><option>Serviços B2B</option><option>Outro</option></select></div>
+      <div class="fg"><label>Maior desafio atual *</label><textarea id="fd" placeholder="Ex: Gasto muito em anúncio e o retorno é baixo. Não sei de onde vêm os clientes..."></textarea></div>
+      <div class="fg"><label>Orçamento estimado para marketing</label><select id="fo"><option value="">Prefiro discutir na reunião</option><option>Até R$ 2.000/mês</option><option>R$ 2.000 – R$ 5.000/mês</option><option>R$ 5.000 – R$ 15.000/mês</option><option>Acima de R$ 15.000/mês</option></select></div>
+      <div class="fg"><label>Como nos conheceu</label><select id="fk"><option value="">Selecione</option><option>Instagram</option><option>Google</option><option>Indicação</option><option>LinkedIn</option><option>Outro</option></select></div>
+      <button class="f-submit" onclick="enviar()">Quero meu diagnóstico gratuito →</button>
+      <p class="f-note">Sem compromisso. Lucas responde em até 2h em dias úteis.</p>
+    </div>
+  </div>
+</section>
 
-            <div class="bg-darkCard p-8 rounded-2xl border border-white/5">
-                <form onsubmit="redirectToWhatsApp(event)" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Seu Nome</label>
-                        <input id="form-name" type="text" required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Nome da Empresa</label>
-                        <input id="form-company" type="text" required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Seu Segmento</label>
-                        <select id="form-niche" required class="w-full bg-darkBg border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neonGreen text-sm text-gray-300">
-                            <option value="E-commerce">E-commerce</option>
-                            <option value="SaaS">SaaS / Tecnologia</option>
-                            <option value="Saúde">Saúde / Clínicas</option>
-                            <option value="Varejo">Varejo / Serviço</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="w-full bg-neonGreen text-darkBg font-display font-bold py-4 rounded-xl hover:bg-white transition text-center text-xs uppercase tracking-widest mt-2">
-                        Quero um Diagnóstico <i class="fab fa-whatsapp ml-1"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
+<!-- FOOTER -->
+<footer>
+  <div class="ft-top">
+    <div class="ft-brand">
+      <a href="#" class="logo">altivy<span>.</span></a>
+      <p>Agência de growth marketing 100% remota. Tráfego pago, branding, SEO e automação para negócios que querem escalar com método.</p>
+      <div class="soc-links">
+        <a href="https://www.instagram.com/altivy.marketing/" target="_blank" class="soc-a" rel="noopener" aria-label="Instagram">📸</a>
+        <a href="https://wa.me/5541987834430" target="_blank" class="soc-a" rel="noopener" aria-label="WhatsApp">💬</a>
+        <a href="mailto:altivygrowth@gmail.com" class="soc-a" aria-label="E-mail">✉️</a>
+      </div>
+    </div>
+    <div class="ft-links">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="#servicos">Tráfego Pago</a></li>
+        <li><a href="#servicos">Gestão de Redes Sociais</a></li>
+        <li><a href="#servicos">Branding & Identidade</a></li>
+        <li><a href="#servicos">SEO & Conteúdo</a></li>
+        <li><a href="#servicos">Criação de Sites</a></li>
+        <li><a href="#servicos">Automação WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="ft-links">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#fundador">Sobre o Lucas</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#diagnostico">Diagnóstico gratuito</a></li>
+      </ul>
+    </div>
+    <div class="ft-links">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/5541987834430" target="_blank">(41) 98783-4430</a></li>
+        <li><a href="mailto:altivygrowth@gmail.com">altivygrowth@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/altivy.marketing/" target="_blank">@altivy.marketing</a></li>
+        <li><span>Seg – Sex, horário comercial</span></li>
+        <li><span>Guaratuba, PR — 100% remoto</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <p>© 2025 Altivy Growth MKT. Todos os direitos reservados.</p>
+    <p>Growth não é sorte. É método.</p>
+  </div>
+</footer>
 
-    <footer class="bg-darkBg border-t border-white/5 py-8 text-xs text-mutedText">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <span class="font-display font-bold text-white text-sm">ALTIVY<span class="text-neonGreen">.</span></span>
-            <p>© 2026 Altivy Growth MKT. Todos os direitos reservados. Operação Digital Remota.</p>
-            <div class="flex gap-6">
-                <a href="https://instagram.com/altivy.marketing" target="_blank" rel="noopener" class="hover:text-white transition">Instagram</a>
-                <a href="#servicos" class="hover:text-white transition">Serviços</a>
-                <a href="#contato" class="hover:text-white transition">Contato</a>
-            </div>
-        </div>
-    </footer>
+<a href="https://wa.me/5541987834430?text=Oi!%20Vim%20pelo%20site%20da%20Altivy.%20Quero%20entender%20como%20voc%C3%AAs%20podem%20me%20ajudar%20a%20crescer.%20Podemos%20conversar%3F" class="wa-f" target="_blank" rel="noopener" aria-label="WhatsApp Altivy">
+  <span class="wa-lbl">Falar com o Lucas</span>
+  <div class="wa-btn">💬</div>
+</a>
 
-    <script>
-        function redirectToWhatsApp(event) {
-            event.preventDefault();
-            const name = document.getElementById('form-name').value;
-            const company = document.getElementById('form-company').value;
-            const niche = document.getElementById('form-niche').value;
-            
-            const message = `Oi! Vim pelo site da Altivy. Me chamo ${name}, da empresa ${company} (${niche}) e gostaria de agendar meu diagnóstico gratuito de growth.`;
-            const encodedMessage = encodeURIComponent(message);
-            
-            window.open(`https://wa.me/5541987834430?text=${encodedMessage}`, '_blank');
-        }
-    </script>
+<script>
+  const cur=document.getElementById('cur'),curR=document.getElementById('curR');
+  document.addEventListener('mousemove',e=>{
+    cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';
+    setTimeout(()=>{curR.style.left=e.clientX+'px';curR.style.top=e.clientY+'px'},55);
+  });
+  document.querySelectorAll('a,button,.s-card,.r-card,.step,.pq-card,.membro').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';curR.style.width='52px';curR.style.height='52px';curR.style.borderColor='rgba(193,255,114,.55)'});
+    el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';curR.style.width='34px';curR.style.height='34px';curR.style.borderColor='rgba(193,255,114,.35)'});
+  });
+
+  const nav=document.getElementById('nav'),ham=document.getElementById('ham'),closeN=document.getElementById('closeN');
+  ham.addEventListener('click',()=>nav.classList.add('nav-open'));
+  closeN.addEventListener('click',()=>nav.classList.remove('nav-open'));
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('nav-open')));
+
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*60);obs.unobserve(e.target)}});
+  },{threshold:0.08});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+  function tFaq(btn){
+    const a=btn.nextElementSibling,open=a.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(x=>x.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(x=>x.classList.remove('active'));
+    if(!open){a.classList.add('open');btn.classList.add('active');}
+  }
+
+  function enviar(){
+    const n=document.getElementById('fn').value.trim(),
+          w=document.getElementById('fw').value.trim(),
+          e=document.getElementById('fe').value.trim(),
+          s=document.getElementById('fs').value,
+          d=document.getElementById('fd').value.trim(),
+          o=document.getElementById('fo').value,
+          k=document.getElementById('fk').value;
+    if(!n||!w||!e||!s||!d){alert('Por favor, preencha os campos obrigatórios (*).');return;}
+    const msg=`Oi, Lucas! Vim pelo site da Altivy e quero um diagnóstico gratuito.\n\n*Nome:* ${n}\n*WhatsApp:* ${w}\n*Empresa:* ${e}\n*Segmento:* ${s}\n*Maior desafio:* ${d}\n*Orçamento estimado:* ${o||'A discutir'}\n*Como nos conheceu:* ${k||'Não informado'}`;
+    window.open(`https://wa.me/5541987834430?text=${encodeURIComponent(msg)}`,'_blank');
+  }
+
+  window.addEventListener('scroll',()=>{
+    document.getElementById('nav').style.borderBottomColor=window.scrollY>50?'rgba(193,255,114,.13)':'rgba(193,255,114,.07)';
+  });
+</script>
 </body>
 </html>
