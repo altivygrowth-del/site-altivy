@@ -149,104 +149,29 @@
     .pq-card h3{font-family:var(--font-d);font-size:21px;font-weight:800;color:var(--black);letter-spacing:-.03em;margin-bottom:10px}
     .pq-card p{font-size:14px;color:rgba(0,0,0,.6);line-height:1.7}
 
-    /* FUNDADOR */
-   /* FUNDADOR */
-#fundador{background:var(--black)}
-.f-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:center;margin-top:64px}
-.f-foto-wrap{position:relative}
-.f-foto{
-  width:100%;
-  aspect-ratio:3/4;
-  background:var(--black-3);
-  border:1px solid rgba(193,255,114,.1);
-  overflow:hidden;
-  position:relative
-}
-.f-foto img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:top center;
-  display:block;
-  filter:grayscale(20%)
-}
-.f-foto::after{
-  content:'';
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  height:30%;
-  background:linear-gradient(to top,var(--black),transparent)
-}
-.f-tag-foto{
-  position:absolute;
-  bottom:-16px;
-  right:-16px;
-  background:var(--green);
-  padding:14px 20px;
-  font-family:var(--font-d);
-  font-size:12px;
-  font-weight:700;
-  color:var(--black);
-  letter-spacing:.04em;
-  text-transform:uppercase;
-  z-index:2
-}
-.f-nome{
-  font-family:var(--font-d);
-  font-size:clamp(32px,4vw,52px);
-  font-weight:800;
-  letter-spacing:-.04em;
-  line-height:1.05;
-  margin-bottom:8px
-}
-.f-nome span{color:var(--green)}
-.f-cargo{
-  font-size:13px;
-  font-weight:600;
-  color:var(--green);
-  text-transform:uppercase;
-  letter-spacing:.1em;
-  margin-bottom:32px;
-  display:flex;
-  align-items:center;
-  gap:10px
-}
-.f-cargo::before{
-  content:'';
-  width:20px;
-  height:1px;
-  background:var(--green)
-}
-.f-bio{
-  font-size:16px;
-  color:var(--white-dim);
-  line-height:1.85;
-  font-weight:300
-}
-.f-bio strong{
-  color:var(--white);
-  font-weight:600
-}
-.f-valores{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:36px
-}
-.f-valor{
-  background:rgba(193,255,114,.07);
-  border:1px solid rgba(193,255,114,.15);
-  padding:8px 16px;
-  border-radius:2px;
-  font-size:12px;
-  font-weight:600;
-  color:var(--green);
-  letter-spacing:.06em;
-  text-transform:uppercase
-}
-        /* DEPOIMENTOS */
+     /* FUNDADOR */
+    #fundador{background:var(--black)}
+    .f-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:center;margin-top:64px}
+    .f-foto-wrap{position:relative}
+    .f-foto{width:100%;aspect-ratio:3/4;background:var(--black-3);border:1px solid rgba(193,255,114,.1);overflow:hidden;position:relative}
+    .f-foto img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;filter:grayscale(20%)}
+    .f-foto::after{content:'';position:absolute;bottom:0;left:0;right:0;height:30%;background:linear-gradient(to top,var(--black),transparent)}
+    .f-tag-foto{position:absolute;bottom:-16px;right:-16px;background:var(--green);padding:14px 20px;font-family:var(--font-d);font-size:12px;font-weight:700;color:var(--black);letter-spacing:.04em;text-transform:uppercase;z-index:2}
+    .f-content{}
+    .f-nome{font-family:var(--font-d);font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:8px}
+    .f-nome span{color:var(--green)}
+    .f-cargo{font-size:13px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:32px;display:flex;align-items:center;gap:10px}
+    .f-cargo::before{content:'';width:20px;height:1px;background:var(--green)}
+    .f-bio{font-size:16px;color:var(--white-dim);line-height:1.85;font-weight:300}
+    .f-bio strong{color:var(--white);font-weight:600}
+    .f-valores{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+    .f-valor{background:rgba(193,255,114,.07);border:1px solid rgba(193,255,114,.15);padding:8px 16px;border-radius:2px;font-size:12px;font-weight:600;color:var(--green);letter-spacing:.06em;text-transform:uppercase}
+    .f-social{display:flex;gap:12px;margin-top:36px;align-items:center}
+    .f-social-label{font-size:11px;color:var(--white-dim);text-transform:uppercase;letter-spacing:.1em}
+    .f-soc-link{width:38px;height:38px;border:1px solid rgba(255,255,255,.1);border-radius:2px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:16px;transition:all .2s;color:var(--white)}
+    .f-soc-link:hover{border-color:var(--green);background:rgba(193,255,114,.08)}
+
+     /* DEPOIMENTOS */
     #depoimentos{background:var(--black)}
     .d-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:60px}
     .d-card{background:var(--black-2);border:1px solid rgba(255,255,255,.055);padding:34px 30px;transition:border-color .3s}
@@ -258,7 +183,6 @@
     .d-name{font-family:var(--font-d);font-size:13px;font-weight:700}
     .d-role{font-size:11px;color:var(--white-dim);margin-top:2px}
     .stars{color:var(--green);font-size:11px;letter-spacing:2px}
-
     /* FAQ */
     #faq{background:var(--black-2)}
     .faq-wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:60px;align-items:start}
@@ -336,8 +260,6 @@
       .ft-top{flex-direction:column}
       .ft-bot{flex-direction:column;align-items:flex-start}
       .f2{grid-template-columns:1fr}
-      .cl-row{flex-direction:column}
-      .cl-logo{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}
       .f-tag-foto{bottom:-12px;right:-8px;font-size:10px;padding:10px 14px}
     }
     .nav-open .nav-links{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--black);z-index:101;align-items:center;justify-content:center;gap:30px}
@@ -503,18 +425,6 @@
         <a href="https://wa.me/5541987834430" target="_blank" class="f-soc-link" rel="noopener" aria-label="WhatsApp">💬</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- CLIENTES -->
-<section id="clientes">
-  <div class="slabel">Clientes</div>
-  <h2>Marcas que <span class="acc">confiam</span><br>na Altivy</h2>
-  <div class="cl-row reveal">
-    <div class="cl-logo"><img src="images/allibel-logo.png" alt="Allibel" /></div>
-    <div class="cl-logo"><div class="cl-placeholder">[Cliente 02]</div></div>
-    <div class="cl-logo"><div class="cl-placeholder">[Cliente 03]</div></div>
-    <div class="cl-logo"><div class="cl-placeholder">[Cliente 04]</div></div>
   </div>
 </section>
 
